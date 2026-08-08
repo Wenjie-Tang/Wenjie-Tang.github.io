@@ -1,0 +1,17 @@
+type = "card"
+title = "Research"
+description = "Selected research projects connecting interaction design, machine learning, and human-centered systems."
+
+[[items]]
+title = "Explainable GATv2-Based Human-AI Decision Support System for Cardiovascular DDI Prediction"
+subtitle = "Project Leader | Advisor: Prof. Xiaowen Xu"
+date = "Dec 2025 - May 2026"
+content = "Led the design of a human-AI decision support system for cardiovascular drug-drug interaction prediction. Translated GATv2 outputs into patient- and clinician-facing risk visualizations, explanations, and intervention suggestions, combining model development with user-centered interaction design."
+tags = ["Explainable AI", "Healthcare HCI", "GATv2", "PyTorch", "FastAPI"]
+
+[[items]]
+title = "Interactive Game System Design for Intergenerational Relationships"
+subtitle = "Project Leader | Advisor: Assoc. Prof. Simian Liu"
+date = "Mar 2024 - Apr 2025"
+content = "Led a family HCI study of communication gaps and emotional connection needs in intergenerational caregiving families. Developed a multi-agent interactive system with a collaborative TV game, child wristband, elder controller, and parent-facing application."
+tags = ["Family HCI", "Social Computing", "Interaction Design", "User Research"]

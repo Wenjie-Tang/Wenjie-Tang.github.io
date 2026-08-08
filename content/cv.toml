@@ -1,0 +1,4 @@
+type = "text"
+title = "CV"
+description = "A concise overview of my education, research, experience, and selected achievements."
+source = "cv.md"

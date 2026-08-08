@@ -1,0 +1,10 @@
+type = "card"
+title = "Research Experience"
+description = "Research roles at the intersection of HCI, Human-AI Interaction, and social computing."
+
+[[items]]
+title = "Studio for Narrative Spaces, City University of Hong Kong"
+subtitle = "Research Assistant | Advisor: Prof. Ray LC"
+date = "May 2026 - Present"
+content = "Contributing to a CHI-oriented study of AI tool identities and psychological affordances, examining how creative practitioners perceive capability boundaries and coordinate multiple generative AI tools in creative workflows. Supporting semi-structured interviews, workflow walkthroughs, open coding, thematic analysis, and affinity diagramming."
+tags = ["Human-AI Interaction", "Qualitative Research", "Generative AI"]

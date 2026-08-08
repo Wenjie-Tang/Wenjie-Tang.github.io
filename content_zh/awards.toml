@@ -1,0 +1,27 @@
+type = "card"
+title = "奖项与资助"
+description = "在科技、设计、创新与社会实践领域获得的国家级、省级奖项与资助。"
+
+[[items]]
+title = "第十四届挑战杯全国银奖"
+subtitle = "国家级奖项"
+date = "2024年"
+content = "排名前0.21%。"
+
+[[items]]
+title = "国家本科生创新创业培训计划资助"
+subtitle = "国家级资助"
+date = "2026年6月"
+content = "获得本科生创新创业项目资助。"
+
+[[items]]
+title = "米兰设计周竞赛全国三等奖"
+subtitle = "国家级奖项"
+date = "2026年"
+content = "排名前0.6%。"
+
+[[items]]
+title = "中国大学生计算机设计大赛省级一等奖"
+subtitle = "省级奖项"
+date = "2026年"
+content = "在计算机辅助设计与创新项目中获奖。"

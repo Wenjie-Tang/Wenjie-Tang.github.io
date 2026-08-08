@@ -1,0 +1,33 @@
+type = "card"
+title = "Awards"
+description = "2 national awards, 10 provincial awards, 6 individual honors, and 4 provincial/national grants across technology, design, innovation, and social practice."
+
+[[items]]
+title = "National Silver Medal, 14th Challenge Cup"
+subtitle = "National-level award"
+date = "2024"
+content = "Placed in the top 0.21%."
+
+[[items]]
+title = "National Undergraduate Innovation and Entrepreneurship Training Program Grant"
+subtitle = "National grant"
+date = "June 2026"
+content = "Received program funding for an undergraduate innovation and entrepreneurship project."
+
+[[items]]
+title = "National Third Prize, Milan Design Week Competition"
+subtitle = "National-level award"
+date = "2026"
+content = "Placed in the top 0.6%."
+
+[[items]]
+title = "Provincial First Prize, China University Students Computer Design Contest"
+subtitle = "Provincial-level award"
+date = "2026"
+content = "Recognized for a computer-aided design and innovation project."
+
+[[items]]
+title = "Provincial Undergraduate Innovation and Entrepreneurship Training Program Grant"
+subtitle = "Provincial grant"
+date = "2025"
+content = "Received support for an undergraduate innovation and entrepreneurship project."

@@ -1,0 +1,75 @@
+[site]
+title = "Wenjie Tang"
+description = "Wenjie Tang - Undergraduate researcher in Human-Computer Interaction and Human-AI Interaction."
+favicon = "/favicon.svg"
+last_updated = "August 8, 2026"
+
+[author]
+name = "Wenjie Tang"
+title = "Undergraduate Researcher in HCI"
+institution = "Central South University"
+avatar = "/profile.png"
+
+[social]
+email = "tangwenjie@csu.edu.cn"
+location = "Changsha, China"
+github = "https://github.com/Wenjie-Tang"
+
+[features]
+enable_likes = false
+enable_one_page_mode = false
+
+[i18n]
+enabled = true
+locales = ["en", "zh"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = true
+switcher = true
+
+[i18n.labels]
+en = "English"
+zh = "中文"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Research Experience"
+type = "page"
+target = "research-experience"
+href = "/research-experience"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "Publications"
+type = "page"
+target = "publications"
+href = "/publications"
+
+[[navigation]]
+title = "Experience"
+type = "page"
+target = "experience"
+href = "/experience"
+
+[[navigation]]
+title = "Awards"
+type = "page"
+target = "awards"
+href = "/awards"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

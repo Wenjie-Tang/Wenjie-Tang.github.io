@@ -1,0 +1,17 @@
+type = "card"
+title = "Experience"
+description = "Industry experience supporting product strategy, user research, and AI-assisted content workflows."
+
+[[items]]
+title = "Xiaomi Corporation"
+subtitle = "Product Management Intern, Internet Services Division | Nanjing, China"
+date = "Jun 2025 - Sep 2025"
+content = "Conducted user research and competitive analysis for an AI reading-assistant Agent. Produced reports and PRDs covering content understanding, summarization, and user follow-up interactions."
+tags = ["Product Management", "User Research", "AI Agent"]
+
+[[items]]
+title = "Mango TV"
+subtitle = "AIGC Intern, Intelligent Research Center | Changsha, China"
+date = "Sep 2025 - Dec 2025"
+content = "Supported training and refinement of an in-house generative AI model for historical film and television content generation, with attention to visual quality, style consistency, and cultural-semantic accuracy."
+tags = ["AIGC", "Generative AI", "Content Generation"]

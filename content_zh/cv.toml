@@ -1,0 +1,4 @@
+type = "text"
+title = "简历"
+description = "教育、研究、实践与代表性成果概览。"
+source = "cv.md"
