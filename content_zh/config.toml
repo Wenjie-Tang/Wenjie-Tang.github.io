@@ -1,48 +1,33 @@
 [site]
-title = "Wenjie Tang"
-description = "Wenjie Tang，中南大学本科研究者，关注人机交互与人机协同。"
+title = "Wenjie Tang | 人机交互研究者"
+description = "Wenjie Tang 是中南大学人机交互本科研究者，研究具身交互、扩展现实、多模态交互、生成式人工智能与人机协同系统。"
 favicon = "/favicon.svg"
-last_updated = "2026年8月8日"
+last_updated = "2026年8月11日"
 
 [author]
 name = "Wenjie Tang"
-title = "HCI本科研究者"
-institution = "中南大学"
-avatar = "/profile.png"
+title = "人机交互本科研究者"
+institution = "产品设计 · 中南大学"
+tagline = "构建并研究人工智能与扩展现实驱动的交互系统。"
+avatar = "/profile.webp"
 
 [social]
 email = "tangwenjie@csu.edu.cn"
-location = "中国，长沙"
+location = "中国长沙"
 github = "https://github.com/Wenjie-Tang"
 
 [features]
 enable_likes = false
-enable_one_page_mode = false
+enable_one_page_mode = true
 
-[i18n]
-enabled = true
-locales = ["en", "zh"]
-default_locale = "en"
-mode = "fixed"
-fixed_locale = "en"
-persist = true
-switcher = true
-
-[i18n.labels]
-en = "English"
-zh = "中文"
+[homepage]
+sections = ["about", "research", "publications", "research-experience", "experience", "education", "awards", "skills", "community"]
 
 [[navigation]]
-title = "关于我"
+title = "关于"
 type = "page"
 target = "about"
 href = "/"
-
-[[navigation]]
-title = "研究经历"
-type = "page"
-target = "research-experience"
-href = "/research-experience"
 
 [[navigation]]
 title = "研究"
@@ -57,10 +42,22 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "实践经历"
+title = "研究经历"
+type = "page"
+target = "research-experience"
+href = "/research-experience"
+
+[[navigation]]
+title = "行业经历"
 type = "page"
 target = "experience"
 href = "/experience"
+
+[[navigation]]
+title = "教育"
+type = "page"
+target = "education"
+href = "/education"
 
 [[navigation]]
 title = "奖项"
@@ -70,6 +67,6 @@ href = "/awards"
 
 [[navigation]]
 title = "简历"
-type = "page"
+type = "link"
 target = "cv"
 href = "/cv"

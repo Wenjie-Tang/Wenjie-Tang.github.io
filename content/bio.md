@@ -1,5 +1,5 @@
-I am an undergraduate researcher in Human-Computer Interaction at Central South University, with a background in Product Design. My research interests include Human-Computer Interaction, Human-AI Interaction, multimodal interaction, user research, social computing, and computer graphics.
+I am an undergraduate researcher in **Human-Computer Interaction** at Central South University, with a Product Design background. I study how intelligent and immersive systems can support people without obscuring agency, safety, or authorship.
 
-My work focuses on how people understand, coordinate with, and build trust around intelligent systems. I am especially interested in explainable AI decision support, creative workflows with generative AI, and interactive systems that support communication across generations.
+I am currently a Research Assistant at the **FIT-AWE Lab, HKUST(GZ)**, advised by **Prof. Haining Liang**. My current work examines diegetic safety interventions for public VR exergames. I also lead research on personalized AI writing and explainable healthcare decision support.
 
-I am currently a Research Assistant at the Studio for Narrative Spaces, City University of Hong Kong, working with Prof. Ray LC. I also lead research and design projects that connect interaction design, machine learning, and real-world social needs.
+Previously, I worked with **Prof. Ray LC** at the Studio for Narrative Spaces, City University of Hong Kong, studying how designers select, coordinate, and adapt multiple GenAI tools across creative workflows.

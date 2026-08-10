@@ -1,4 +1,4 @@
 type = "publication"
-title = "Publications"
-description = "Selected papers, conference work, and patent applications."
+title = "Publications & Patents"
+description = "Peer-reviewed publications and intellectual property, separated by contribution type and described without unverified links or claims."
 source = "publications.bib"

@@ -1,0 +1,12 @@
+type = "card"
+variant = "compact"
+title = "教育背景"
+description = "以交互、视觉传播与技术原型为基础的产品设计训练。"
+
+[[items]]
+title = "中南大学（985 工程）"
+subtitle = "产品设计本科"
+location = "中国"
+date = "2023年9月-2027年6月"
+content = "GPA 87.74/100 · 专业排名 22/147"
+bullets = ["信息与传播设计 - 93", "计算机辅助工业设计 - 90", "数字图像技术"]

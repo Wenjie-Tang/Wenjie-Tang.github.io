@@ -1,33 +1,44 @@
 type = "card"
-title = "Awards"
-description = "2 national awards, 10 provincial awards, 6 individual honors, and 4 provincial/national grants across technology, design, innovation, and social practice."
+variant = "awards"
+title = "Selected Awards & Grants"
+description = "2 National Awards, 4 Provincial/National Grants, 15 Provincial Awards, and 6 Individual Honors across technology, design, innovation, and social practice."
 
 [[items]]
 title = "National Silver Medal, 14th Challenge Cup"
-subtitle = "National-level award"
 date = "2024"
-content = "Placed in the top 0.21%."
+content = "Top 0.21%"
 
 [[items]]
-title = "National Undergraduate Innovation and Entrepreneurship Training Program Grant"
-subtitle = "National grant"
-date = "June 2026"
-content = "Received program funding for an undergraduate innovation and entrepreneurship project."
-
-[[items]]
-title = "National Third Prize, Milan Design Week Competition"
-subtitle = "National-level award"
+title = "National Third Prize, 2026 Milan Design Week Competition"
 date = "2026"
-content = "Placed in the top 0.6%."
+content = "Top 0.6%"
 
 [[items]]
 title = "Provincial First Prize, China University Students Computer Design Contest"
-subtitle = "Provincial-level award"
 date = "2026"
-content = "Recognized for a computer-aided design and innovation project."
+content = "Top 10%"
+
+[[items]]
+title = "National Undergraduate Innovation and Entrepreneurship Training Program Grant"
+date = "2026"
+content = "RMB 20,000"
+
+[[items]]
+title = "Outstanding Individual, Student Management Team, Central South University"
+date = "2025"
+content = "Top 1%"
+
+[[items]]
+title = "Second-Class Academic Scholarship, Central South University"
+date = "2025"
+content = "Top 10%"
 
 [[items]]
 title = "Provincial Undergraduate Innovation and Entrepreneurship Training Program Grant"
-subtitle = "Provincial grant"
-date = "2025"
-content = "Received support for an undergraduate innovation and entrepreneurship project."
+date = "2024/2025"
+content = "RMB 10,000"
+
+[[items]]
+title = "National Mandarin Promotion for Rural Revitalization Social Practice Grant"
+date = "2024"
+content = "RMB 3,000"

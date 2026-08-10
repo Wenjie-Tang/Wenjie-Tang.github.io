@@ -1,28 +1,21 @@
 type = "about"
-title = "关于我"
+title = "关于"
 
 [profile]
 research_interests = [
   "人机交互",
-  "人机协同",
+  "具身交互",
+  "扩展现实（XR）",
   "多模态交互",
-  "用户研究",
-  "社会计算",
-  "计算机图形学"
+  "机器学习",
+  "生成式人工智能"
 ]
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
-title = "关于我"
-
-[[sections]]
-id = "featured_publications"
-type = "publications"
-title = "精选论文"
-filter = "selected"
-limit = 3
+title = "研究让人保持掌控的交互系统"
 
 [[sections]]
 id = "news"

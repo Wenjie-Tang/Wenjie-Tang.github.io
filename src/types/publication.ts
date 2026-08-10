@@ -1,3 +1,5 @@
+import type { ActionLink } from './page';
+
 export interface Author {
   name: string;
   isMainAuthor?: boolean;
@@ -53,6 +55,10 @@ export interface Publication {
   summary?: string;
   researchArea: ResearchArea;
   description?: string;
+  category?: 'publication' | 'patent';
+  role?: string;
+  venueLabel?: string;
+  actions?: ActionLink[];
 }
 
 export type PublicationType =

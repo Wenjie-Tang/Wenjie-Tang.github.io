@@ -1,0 +1,16 @@
+type = "card"
+variant = "clusters"
+title = "Skills & Methods"
+description = "A research practice spanning system building, empirical study, and interaction design."
+
+[[items]]
+title = "Technical Skills"
+tags = ["Software Development", "XR/VR Systems", "AI/LLM Integration", "Hardware Prototyping", "Sensor-Based Interaction", "Information Visualization"]
+
+[[items]]
+title = "Research Skills"
+tags = ["User Research", "Experimental & Survey Design", "Semi-Structured Interviews", "Usability Evaluation", "Mixed-Methods Analysis", "Behavioral Data Analysis", "System Evaluation"]
+
+[[items]]
+title = "Personal Interests"
+tags = ["Community Engagement", "Volunteering", "Intercultural Communication", "Chinese Painting", "Creative Writing"]

@@ -4,25 +4,18 @@ title = "About"
 [profile]
 research_interests = [
   "Human-Computer Interaction",
-  "Human-AI Interaction",
+  "Embodied Interaction",
+  "Extended Reality (XR)",
   "Multimodal Interaction",
-  "User Research",
-  "Social Computing",
-  "Computer Graphics"
+  "Machine Learning",
+  "Generative AI"
 ]
 
 [[sections]]
 id = "about"
 type = "markdown"
 source = "bio.md"
-title = "About Me"
-
-[[sections]]
-id = "featured_publications"
-type = "publications"
-title = "Selected Publications"
-filter = "selected"
-limit = 3
+title = "Researching interactions that keep people in control"
 
 [[sections]]
 id = "news"

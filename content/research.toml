@@ -1,17 +1,79 @@
 type = "card"
-title = "Research"
-description = "Selected research projects connecting interaction design, machine learning, and human-centered systems."
+variant = "research"
+title = "Selected Research"
+description = "Research systems and studies spanning XR safety, human-AI collaboration, explainable healthcare AI, and family interaction."
 
 [[items]]
-title = "Explainable GATv2-Based Human-AI Decision Support System for Cardiovascular DDI Prediction"
-subtitle = "Project Leader | Advisor: Prof. Xiaowen Xu"
-date = "Dec 2025 - May 2026"
-content = "Led the design of a human-AI decision support system for cardiovascular drug-drug interaction prediction. Translated GATv2 outputs into patient- and clinician-facing risk visualizations, explanations, and intervention suggestions, combining model development with user-centered interaction design."
-tags = ["Explainable AI", "Healthcare HCI", "GATv2", "PyTorch", "FastAPI"]
+eyebrow = "Current research · VR safety"
+title = "Safe Passage: Diegetic Safety Events for Public VR Exergames"
+affiliation = "FIT-AWE Lab, The Hong Kong University of Science and Technology (Guangzhou)"
+role = "Research Assistant"
+advisor = "Advisor: Prof. Haining Liang"
+date = "July 2026-Present"
+status = "In preparation for IEEE VR 2027"
+content = "Leading the design of a closed-loop safety mechanism for shared-space VR exergames. Safe Passage represents bystanders diegetically and mediates passage space by redirecting or removing conflicting targets while preserving fair scoring opportunities. The Unity prototype supports comparison with an event-triggered Passthrough AR baseline through behavioral safety, gameplay continuity, and subjective experience measures."
+metrics = ["Closed-loop safety intervention", "VR vs. Passthrough AR baseline"]
+tags = ["Extended Reality", "Embodied Interaction", "VR Safety"]
+methods = ["Unity", "C#", "PICO SDK", "XR Interaction Toolkit", "Behavioral Logging"]
+teaser = "XR-01"
+teaser_label = "Diegetic safety for shared-space VR"
 
 [[items]]
-title = "Interactive Game System Design for Intergenerational Relationships"
-subtitle = "Project Leader | Advisor: Assoc. Prof. Simian Liu"
-date = "Mar 2024 - Apr 2025"
-content = "Led a family HCI study of communication gaps and emotional connection needs in intergenerational caregiving families. Developed a multi-agent interactive system with a collaborative TV game, child wristband, elder controller, and parent-facing application."
-tags = ["Family HCI", "Social Computing", "Interaction Design", "User Research"]
+eyebrow = "Current research · AI writing"
+title = "Preserving Authorship-Critical Decision Rights in Personalized AI Writing"
+affiliation = "Central South University"
+role = "Project Leader"
+advisor = "Advisor: Prof. Yuhui Wang"
+date = "June 2026-Present"
+status = "Pilot study completed"
+content = "Investigating how personalized AI writing changes psychological ownership, agency, and authorship certainty. A two-stage framework separates mechanism discovery from design validation. A 2×2 factorial pilot and edit-trace analysis inform the Authorship Anchors interaction paradigm—Claim, Evidence, and Commitment—which aims to preserve core decision rights while AI supports surface-level English execution. Pilot findings are treated as formative evidence, not causal conclusions."
+metrics = ["2×2 factorial pilot", "N=15", "Edit-trace analysis"]
+tags = ["Human-AI Interaction", "AI Writing", "Creativity Support"]
+methods = ["HTML/CSS/JavaScript", "OpenAI API", "Behavior Logging", "Controlled Experiments"]
+teaser = "HAI-02"
+teaser_label = "Authorship anchors for personalized AI writing"
+
+[[items]]
+eyebrow = "Qualitative study · Creative workflows"
+title = "“A GenAI Toolkit, Not a Single Tool”: Multi-GenAI Creative Workflows"
+affiliation = "Studio for Narrative Spaces, City University of Hong Kong"
+role = "Research Assistant"
+advisor = "Advisor: Prof. Ray LC"
+date = "Apr. 2026-July 2026"
+status = "Prepared for submission to ACM CHI 2027"
+content = "Studied how designers select, coordinate, and adapt multiple GenAI tools across creative work. Contributed to literature review, interviews, retrospective workflow walkthroughs, qualitative coding, thematic analysis, and manuscript development. Publication-ready visualizations translate findings about tool selection, role assignment, handoffs, switching, and evolving use habits into a Revisable GenAI Tool Repertoire framework."
+metrics = ["28 designers", "Interviews and workflow walkthroughs"]
+tags = ["Human-AI Collaboration", "Generative AI", "Qualitative Research"]
+methods = ["Semi-Structured Interviews", "Inductive Thematic Analysis", "Qualitative Coding"]
+teaser = "GEN-03"
+teaser_label = "Coordinating a revisable GenAI tool repertoire"
+
+[[items]]
+eyebrow = "Explainable AI · Healthcare"
+title = "Explainable GATv2-Based Human-AI Decision Support for Cardiovascular DDI Prediction"
+affiliation = "Central South University"
+role = "Project Leader"
+advisor = "Advisors: Prof. Simian Liu and Zhenxiao Zhang"
+date = "Dec. 2025-May 2026"
+status = "RMB 20,000 national innovation grant"
+content = "Led the design of a human-AI decision-support system for drug-drug interaction prediction, translating GATv2 outputs into patient- and clinician-facing risk visualizations, explanations, and intervention suggestions. Coordinated data cleaning, local model training, web prototype development, literature review, and research writing to connect DDI graph modeling with explainable healthcare interaction."
+metrics = ["2026 national undergraduate innovation grant", "RMB 20,000"]
+tags = ["Explainable AI", "Healthcare HCI", "Human-AI Interaction"]
+methods = ["PyTorch", "FastAPI", "SQLite", "OCR", "Qwen API", "GATv2"]
+teaser = "XAI-04"
+teaser_label = "Explainable decision support for drug interactions"
+
+[[items]]
+eyebrow = "Family HCI · Interaction design"
+title = "Research on Interactive Game System Design for Intergenerational Relationships"
+affiliation = "Central South University"
+role = "Project Leader"
+advisor = "Advisor: Prof. Simian Liu"
+date = "Mar. 2024-Apr. 2025"
+status = "Study and prototype completed"
+content = "Conducted semi-structured interviews and thematic analysis to identify collaboration needs and emotional communication patterns among children, older adults, and parents. Designed a two-player collaborative game, interactive hardware prototype, and parent-facing app. Usability testing with 20 family groups informed refinements to multi-device interaction flows, interface design, and task-feedback mechanisms."
+metrics = ["20 family groups", "Game + hardware + parent app"]
+tags = ["Family HCI", "Embodied Interaction", "Intergenerational Interaction"]
+methods = ["Semi-Structured Interviews", "Thematic Analysis", "Usability Testing", "Hardware Prototyping"]
+teaser = "FAM-05"
+teaser_label = "Collaborative play across generations"

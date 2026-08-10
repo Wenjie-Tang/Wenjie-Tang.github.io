@@ -1,0 +1,25 @@
+type = "card"
+variant = "compact"
+title = "社区与服务"
+description = "面向教学、文化保护与社区设计的田野实践。"
+
+[[items]]
+title = "“源头活水”支教志愿项目"
+subtitle = "志愿教师、宣传组负责人"
+location = "中国江华瑶族自治县"
+date = "2024年7月"
+content = "设计游戏化学习活动，并根据课堂观察与学生反馈调整教学形式。"
+
+[[items]]
+title = "非物质文化遗产保护与乡村振兴"
+subtitle = "“湘遇湘心”团队核心成员"
+location = "中国石笋铺村"
+date = "2024年6月"
+content = "开展文化遗产田野研究，并将洞察转化为参与式与视觉设计。"
+
+[[items]]
+title = "推普助力乡村振兴"
+subtitle = "闻“乡”路团队核心成员、宣传组负责人"
+location = "中国黑石铺社区"
+date = "2024年9月"
+content = "开展社区语言活动与田野数据收集，将参与者需求转化为项目优化与传播建议。"

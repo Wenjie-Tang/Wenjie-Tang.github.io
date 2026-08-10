@@ -1,14 +1,15 @@
 [site]
-title = "Wenjie Tang"
-description = "Wenjie Tang - Undergraduate researcher in Human-Computer Interaction and Human-AI Interaction."
+title = "Wenjie Tang | HCI Researcher"
+description = "Wenjie Tang is an undergraduate researcher in human-computer interaction at Central South University, working on embodied interaction, XR, multimodal interaction, generative AI, and human-AI systems."
 favicon = "/favicon.svg"
-last_updated = "August 8, 2026"
+last_updated = "August 11, 2026"
 
 [author]
 name = "Wenjie Tang"
-title = "Undergraduate Researcher in HCI"
-institution = "Central South University"
-avatar = "/profile.png"
+title = "Undergraduate Researcher in Human-Computer Interaction"
+institution = "Product Design · Central South University"
+tagline = "Building and studying AI- and XR-enabled interactive systems."
+avatar = "/profile.webp"
 
 [social]
 email = "tangwenjie@csu.edu.cn"
@@ -17,7 +18,10 @@ github = "https://github.com/Wenjie-Tang"
 
 [features]
 enable_likes = false
-enable_one_page_mode = false
+enable_one_page_mode = true
+
+[homepage]
+sections = ["about", "research", "publications", "research-experience", "experience", "education", "awards", "skills", "community"]
 
 [i18n]
 enabled = true
@@ -39,12 +43,6 @@ target = "about"
 href = "/"
 
 [[navigation]]
-title = "Research Experience"
-type = "page"
-target = "research-experience"
-href = "/research-experience"
-
-[[navigation]]
 title = "Research"
 type = "page"
 target = "research"
@@ -57,10 +55,22 @@ target = "publications"
 href = "/publications"
 
 [[navigation]]
-title = "Experience"
+title = "Research Exp."
+type = "page"
+target = "research-experience"
+href = "/research-experience"
+
+[[navigation]]
+title = "Industry"
 type = "page"
 target = "experience"
 href = "/experience"
+
+[[navigation]]
+title = "Education"
+type = "page"
+target = "education"
+href = "/education"
 
 [[navigation]]
 title = "Awards"
@@ -70,6 +80,6 @@ href = "/awards"
 
 [[navigation]]
 title = "CV"
-type = "page"
+type = "link"
 target = "cv"
 href = "/cv"

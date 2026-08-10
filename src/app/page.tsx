@@ -71,10 +71,13 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
   let pagesToShow: PageData[] = [];
 
   if (enableOnePageMode) {
-    pagesToShow = localeConfig.navigation
+    const homepageSections = localeConfig.homepage?.sections || localeConfig.navigation
       .filter((item) => item.type === 'page')
-      .map((item) => {
-        const rawConfig = getPageConfig(item.target, locale);
+      .map((item) => item.target);
+
+    pagesToShow = homepageSections
+      .map((sectionId) => {
+        const rawConfig = getPageConfig(sectionId, locale);
         if (!rawConfig) return null;
 
         const pageConfig = rawConfig as BasePageConfig;
@@ -82,7 +85,7 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
         if (pageConfig.type === 'about' || 'sections' in (rawConfig as object)) {
           return {
             type: 'about',
-            id: item.target,
+            id: sectionId,
             sections: processSections((rawConfig as { sections: SectionConfig[] }).sections || [], locale),
           } as PageData;
         }
@@ -92,7 +95,7 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
           const bibtex = getBibtexContent(pubConfig.source, locale);
           return {
             type: 'publication',
-            id: item.target,
+            id: sectionId,
             config: pubConfig,
             publications: parseBibTeX(bibtex, locale),
           } as PageData;
@@ -102,7 +105,7 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
           const textConfig = pageConfig as TextPageConfig;
           return {
             type: 'text',
-            id: item.target,
+            id: sectionId,
             config: textConfig,
             content: getMarkdownContent(textConfig.source, locale),
           } as PageData;
@@ -111,7 +114,7 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
         if (pageConfig.type === 'card') {
           return {
             type: 'card',
-            id: item.target,
+            id: sectionId,
             config: pageConfig as CardPageConfig,
           } as PageData;
         }

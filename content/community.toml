@@ -1,0 +1,25 @@
+type = "card"
+variant = "compact"
+title = "Community & Service"
+description = "Field-based teaching, cultural preservation, and community design work."
+
+[[items]]
+title = "Living Water Project Teaching Volunteer Program"
+subtitle = "Volunteer Teacher & Head of the Publicity Team"
+location = "Jianghua Yao Autonomous County, China"
+date = "Jul. 2024"
+content = "Designed gamified learning activities and adapted teaching formats through classroom observation and student feedback."
+
+[[items]]
+title = "Intangible Cultural Heritage Preservation and Rural Revitalization"
+subtitle = "Core Member, Xiangyu Xiangxin Team"
+location = "Shisunpu Village, China"
+date = "Jun. 2024"
+content = "Conducted cultural heritage field research and translated insights into participatory and visual design."
+
+[[items]]
+title = "Promoting Mandarin for Rural Revitalization"
+subtitle = "Core Member, Wenxiaolu Team & Head of the Publicity Team"
+location = "Heishipu Community, China"
+date = "Sept. 2024"
+content = "Conducted community language activities and field data collection, synthesizing participant needs into program and outreach recommendations."

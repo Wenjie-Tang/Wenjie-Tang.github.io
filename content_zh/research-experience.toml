@@ -1,10 +1,26 @@
 type = "card"
+variant = "timeline"
 title = "研究经历"
-description = "在人机交互、人机协同与社会计算交叉领域开展研究。"
+description = "聚焦扩展现实、具身交互与人机协同的当前及近期研究任职。"
 
 [[items]]
-title = "香港城市大学 Narrative Spaces 工作室"
-subtitle = "研究助理 | 导师：Ray LC 教授"
-date = "2026年5月 - 至今"
-content = "参与人工智能工具身份与心理可供性相关的 CHI 方向研究，关注创作者如何理解能力边界并在创作工作流中协调多个生成式人工智能工具。参与半结构化访谈、工作流走查、开放编码、主题分析与亲和图分析。"
-tags = ["人机协同", "质性研究", "生成式人工智能"]
+eyebrow = "当前任职"
+title = "香港科技大学（广州）FIT-AWE Lab"
+subtitle = "Safe Passage：公共 VR 健身游戏中的叙事化安全事件"
+role = "研究助理"
+advisor = "导师：梁海宁教授"
+date = "2026年7月-至今"
+status = "准备投稿 IEEE VR 2027"
+content = "设计并开发面向公共 VR 健身游戏的 Unity 安全机制与实验框架，评估行为安全、游戏连续性和主观体验。"
+tags = ["扩展现实", "具身交互", "VR 安全"]
+
+[[items]]
+eyebrow = "近期任职"
+title = "香港城市大学 Studio for Narrative Spaces"
+subtitle = "包含 28 名设计师的多生成式人工智能创意工作流研究"
+role = "研究助理"
+advisor = "导师：Ray LC 教授"
+date = "2026年4月-2026年7月"
+status = "已准备投稿 ACM CHI 2027"
+content = "参与文献综述、质性数据收集与分析、论文撰写和研究可视化，研究设计师如何协调多个生成式人工智能工具。"
+tags = ["人机协同", "生成式人工智能", "质性研究"]

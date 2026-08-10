@@ -52,7 +52,10 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
     const month = monthMapping[monthStr] || (parseInt(monthStr) || undefined);
 
     // Determine type
-    const type = typeMapping[entry.entryType.toLowerCase()] || 'journal';
+    const category = tags.category?.toLowerCase() === 'patent' ? 'patent' : 'publication';
+    const type = category === 'patent'
+      ? 'patent'
+      : (typeMapping[entry.entryType.toLowerCase()] || 'journal');
 
     // Parse tags/keywords
     const keywords = tags.keywords?.split(',').map((k: string) => k.trim()) || [];
@@ -73,7 +76,7 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       year,
       month: monthMapping[tags.month?.toLowerCase()] ? String(month) : tags.month,
       type,
-      status: 'published',
+      status: parseStatus(tags.status),
       tags: keywords,
       keywords,
       researchArea: detectResearchArea(tags.title, keywords),
@@ -89,11 +92,14 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
       code: tags.code,
       abstract: cleanBibTeXString(tags.abstract),
       description: cleanBibTeXString(tags.description || tags.note),
+      category,
+      role: cleanBibTeXString(tags.role),
+      venueLabel: cleanBibTeXString(tags.venue),
       selected,
       preview,
 
       // Store original BibTeX (excluding custom fields)
-      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code']),
+      bibtex: reconstructBibTeX(entry, ['selected', 'preview', 'description', 'keywords', 'code', 'category', 'role', 'venue', 'status']),
     };
 
     // Clean up undefined fields
@@ -119,6 +125,14 @@ export function parseBibTeX(bibtexContent: string, locale?: string): Publication
     // Sort by month descending (December to January)
     return monthB - monthA;
   });
+}
+
+function parseStatus(status?: string): Publication['status'] {
+  const normalized = status?.trim().toLowerCase();
+  const allowed: Publication['status'][] = ['published', 'accepted', 'under-review', 'submitted', 'in-preparation', 'draft'];
+  return allowed.includes(normalized as Publication['status'])
+    ? normalized as Publication['status']
+    : 'published';
 }
 
 function getHighlightNames(locale?: string): string[] {

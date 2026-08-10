@@ -1,4 +1,4 @@
 type = "text"
-title = "CV"
-description = "A concise overview of my education, research, experience, and selected achievements."
+title = "Curriculum Vitae"
+description = "Updated August 2026. The HTML version below is the current source of truth."
 source = "cv.md"

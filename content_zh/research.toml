@@ -1,17 +1,79 @@
 type = "card"
-title = "研究"
-description = "连接交互设计、机器学习与以人为中心的智能系统研究。"
+variant = "research"
+title = "精选研究"
+description = "涵盖扩展现实安全、人机协同、可解释医疗人工智能与家庭交互的系统研究与实证研究。"
 
 [[items]]
-title = "基于可解释 GATv2 的心血管药物相互作用人机协同决策支持系统"
-subtitle = "项目负责人 | 指导教师：徐小雯教授"
-date = "2025年12月 - 2026年5月"
-content = "负责心血管药物相互作用预测人机协同决策支持系统的设计，将 GATv2 模型输出转化为面向患者与临床人员的风险可视化、解释与干预建议。"
-tags = ["可解释人工智能", "医疗人机交互", "图神经网络"]
+eyebrow = "当前研究 · VR 安全"
+title = "Safe Passage：公共 VR 健身游戏中的叙事化安全事件"
+affiliation = "香港科技大学（广州）FIT-AWE Lab"
+role = "研究助理"
+advisor = "导师：梁海宁教授"
+date = "2026年7月-至今"
+status = "准备投稿 IEEE VR 2027"
+content = "负责设计共享空间 VR 健身游戏的闭环安全机制。Safe Passage 以叙事化方式呈现旁观者，并通过重定向或移除冲突目标来调节通行空间，同时保留公平得分机会。Unity 原型支持与事件触发式 Passthrough AR 基线进行比较，评估行为安全、游戏连续性与主观体验。"
+metrics = ["闭环安全干预", "VR 与 Passthrough AR 基线比较"]
+tags = ["扩展现实", "具身交互", "VR 安全"]
+methods = ["Unity", "C#", "PICO SDK", "XR Interaction Toolkit", "行为日志"]
+teaser = "XR-01"
+teaser_label = "共享空间 VR 的叙事化安全机制"
 
 [[items]]
-title = "代际关系互动游戏系统设计"
-subtitle = "项目负责人 | 指导教师：刘思敏副教授"
-date = "2024年3月 - 2025年4月"
-content = "围绕代际照护家庭中的沟通缺口与情感连接需求开展家庭人机交互研究，设计包含电视协同游戏、儿童手环、老年人控制器和家长端应用的多智能体互动系统。"
-tags = ["家庭人机交互", "社会计算", "用户研究"]
+eyebrow = "当前研究 · AI 写作"
+title = "在个性化 AI 写作中保留作者关键决策权"
+affiliation = "中南大学"
+role = "项目负责人"
+advisor = "导师：王宇辉教授"
+date = "2026年6月-至今"
+status = "已完成先导实验"
+content = "研究个性化 AI 写作如何改变心理所有权、能动性与作者身份确定性。两阶段框架将机制发现与设计验证分开。2×2 析因先导实验与编辑轨迹分析用于形成 Authorship Anchors 交互范式，包括主张、证据与承诺，旨在由 AI 承担表层英语表达时保留用户核心决策权。先导结果仅作为形成性证据，不作因果结论。"
+metrics = ["2×2 析因先导实验", "N=15", "编辑轨迹分析"]
+tags = ["人机交互", "AI 写作", "创造力支持"]
+methods = ["HTML/CSS/JavaScript", "OpenAI API", "行为日志", "控制实验"]
+teaser = "HAI-02"
+teaser_label = "个性化 AI 写作中的作者身份锚点"
+
+[[items]]
+eyebrow = "质性研究 · 创意工作流"
+title = "“生成式人工智能工具箱，而非单一工具”：多工具创意工作流"
+affiliation = "香港城市大学 Studio for Narrative Spaces"
+role = "研究助理"
+advisor = "导师：Ray LC 教授"
+date = "2026年4月-2026年7月"
+status = "已准备投稿 ACM CHI 2027"
+content = "研究设计师如何在创意工作中选择、协调与调整多个生成式人工智能工具。参与文献综述、访谈、回溯式工作流走查、质性编码、主题分析与论文撰写，并将工具选择、角色分配、交接、切换与使用习惯演变转化为 Revisable GenAI Tool Repertoire 框架的论文级可视化。"
+metrics = ["28 名设计师", "访谈与工作流走查"]
+tags = ["人机协同", "生成式人工智能", "质性研究"]
+methods = ["半结构化访谈", "归纳主题分析", "质性编码"]
+teaser = "GEN-03"
+teaser_label = "可调整的生成式人工智能工具组合"
+
+[[items]]
+eyebrow = "可解释人工智能 · 医疗"
+title = "基于可解释 GATv2 的心血管药物相互作用人机决策支持系统"
+affiliation = "中南大学"
+role = "项目负责人"
+advisor = "导师：刘思敏教授、Zhenxiao Zhang"
+date = "2025年12月-2026年5月"
+status = "国家级创新资助 20,000 元"
+content = "负责人机决策支持系统设计，将 GATv2 药物相互作用预测输出转化为面向患者与临床人员的风险可视化、解释和干预建议。协调数据清洗、本地模型训练、网页原型开发、文献综述与研究写作，将药物相互作用图建模与可解释医疗交互连接起来。"
+metrics = ["2026 年国家本科生创新资助", "20,000 元"]
+tags = ["可解释人工智能", "医疗人机交互", "人机交互"]
+methods = ["PyTorch", "FastAPI", "SQLite", "OCR", "Qwen API", "GATv2"]
+teaser = "XAI-04"
+teaser_label = "面向药物相互作用的可解释决策支持"
+
+[[items]]
+eyebrow = "家庭人机交互 · 交互设计"
+title = "代际关系互动游戏系统设计研究"
+affiliation = "中南大学"
+role = "项目负责人"
+advisor = "导师：刘思敏教授"
+date = "2024年3月-2025年4月"
+status = "研究与原型已完成"
+content = "通过半结构化访谈与主题分析识别儿童、老年人与父母之间的协作需求和情感沟通模式。设计双人协作游戏、交互硬件原型与家长端应用，并邀请 20 组家庭开展可用性测试，据此优化多设备交互流程、界面设计与任务反馈机制。"
+metrics = ["20 组家庭", "游戏 + 硬件 + 家长端应用"]
+tags = ["家庭人机交互", "具身交互", "代际互动"]
+methods = ["半结构化访谈", "主题分析", "可用性测试", "硬件原型"]
+teaser = "FAM-05"
+teaser_label = "支持代际协作的互动游戏"

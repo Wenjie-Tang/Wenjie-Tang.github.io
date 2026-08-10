@@ -14,6 +14,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const openGraphLocale = runtimeI18n.defaultLocale === 'zh' ? 'zh_CN' : 'en_US';
 
   return {
+    metadataBase: new URL('https://wenjie-tang.github.io/'),
     title: {
       default: config.site.title,
       template: `%s | ${config.site.title}`,
@@ -26,12 +27,16 @@ export async function generateMetadata(): Promise<Metadata> {
     icons: {
       icon: config.site.favicon,
     },
+    alternates: {
+      canonical: '/',
+    },
     openGraph: {
       type: 'website',
       locale: openGraphLocale,
       title: config.site.title,
       description: config.site.description,
       siteName: `${config.author.name}'s Academic Website`,
+      url: '/',
     },
   };
 }
@@ -102,7 +107,7 @@ function buildLocalizedConfigMaps(
   for (const locale of locales) {
     const localizedConfig = getConfig(locale);
     navigationByLocale[locale] = localizedConfig.navigation;
-    siteTitleByLocale[locale] = localizedConfig.site.title;
+    siteTitleByLocale[locale] = localizedConfig.author.name;
     lastUpdatedByLocale[locale] = localizedConfig.site.last_updated;
   }
 
@@ -163,7 +168,7 @@ export default function RootLayout({
           <LocaleProvider config={runtimeI18n}>
             <Navigation
               items={config.navigation}
-              siteTitle={config.site.title}
+              siteTitle={config.author.name}
               enableOnePageMode={config.features.enable_one_page_mode}
               i18n={runtimeI18n}
               itemsByLocale={navigationByLocale}
