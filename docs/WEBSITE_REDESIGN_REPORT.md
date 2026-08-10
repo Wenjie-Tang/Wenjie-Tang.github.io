@@ -61,7 +61,7 @@ The redesign uses semantic headings, sections, articles, lists, dates, and descr
 
 ## 12. Deployment Status
 
-The repository remains `Wenjie-Tang/Wenjie-Tang.github.io` on `main`. The official GitHub Pages workflow builds with Node.js 22, uploads `out/`, and deploys to the root user-site URL. Generated HTML contains no `/PRISM/` or repository-name path prefix. Final commit, push, Actions result, and production URL validation are recorded after deployment.
+The repository remains `Wenjie-Tang/Wenjie-Tang.github.io` on `main`. Redesign commit `c35457bb8464d1cef5f5d8dbd59ff8c8b5d2471c` was pushed normally with no history rewrite. GitHub Actions run `31426648517` completed successfully, and the Pages deployment also completed successfully. Production returned HTTP 200 for all eight routes, the optimized portrait, favicon, and archived CV at `https://wenjie-tang.github.io/`. The live homepage contains the new research content, and generated HTML contains no `/PRISM/` or repository-name path prefix.
 
 ## 13. Unresolved Items
 
