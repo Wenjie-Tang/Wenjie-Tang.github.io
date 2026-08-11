@@ -172,8 +172,8 @@ export default function Navigation({
                 : 'bg-transparent'
             )}
           >
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex justify-between items-center h-16 lg:h-20">
+            <div className="max-w-[65rem] mx-auto px-5 sm:px-6">
+              <div className="flex justify-between items-center h-[58px]">
                 <motion.div
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -181,17 +181,17 @@ export default function Navigation({
                 >
                   <Link
                     href="/"
-                    className="text-xl lg:text-2xl font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
+                    className="text-base font-serif font-semibold text-primary hover:text-accent transition-colors duration-200"
                   >
                     {effectiveSiteTitle}
                   </Link>
                 </motion.div>
 
                 <div className="hidden xl:block">
-                  <div className="ml-10 flex items-center space-x-3">
+                  <div className="ml-8 flex items-center space-x-2">
                     <div
                       ref={navContainerRef}
-                      className="relative flex items-baseline space-x-1"
+                      className="relative flex items-baseline"
                       onMouseLeave={() => setHoveredHref(null)}
                     >
                       {indicatorStyle && (
@@ -229,7 +229,7 @@ export default function Navigation({
                             onClick={() => enableOnePageMode && item.type === 'page' && setActiveHash(`#${item.target}`)}
                             onMouseEnter={() => setHoveredHref(href)}
                             className={cn(
-                              'relative px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-150',
+                            'relative px-2.5 py-2 text-[0.84375rem] leading-[1.2] font-medium rounded-md transition-colors duration-150',
                               isActive
                                 ? 'text-primary'
                                 : hoveredHref === href
@@ -257,9 +257,9 @@ export default function Navigation({
                       transition={{ duration: 0.2 }}
                     >
                       {open ? (
-                        <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                        <XMarkIcon className="block h-5 w-5" aria-hidden="true" />
                       ) : (
-                        <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                        <Bars3Icon className="block h-5 w-5" aria-hidden="true" />
                       )}
                     </motion.div>
                   </Disclosure.Button>
@@ -318,7 +318,7 @@ export default function Navigation({
                               close();
                             }}
                             className={cn(
-                              'block px-3 py-2 rounded-md text-base font-medium transition-all duration-200',
+                              'block px-3 py-2 rounded-md text-sm font-medium transition-all duration-200',
                               isActive
                                 ? 'text-primary bg-accent/10 border-l-4 border-accent'
                                 : 'text-neutral-600 hover:text-primary hover:bg-neutral-50'

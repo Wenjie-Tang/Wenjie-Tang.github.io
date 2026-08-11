@@ -48,7 +48,7 @@ export function ThemeToggle() {
 
   if (!mounted) {
     return (
-      <div className="flex items-center justify-center w-10 h-10 rounded-lg border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] bg-background dark:bg-neutral-800">
+      <div className="flex items-center justify-center w-9 h-9 rounded-md border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] bg-background dark:bg-neutral-800">
         <div className="w-4 h-4 rounded-full bg-neutral-300 animate-pulse" />
       </div>
     );
@@ -70,7 +70,7 @@ export function ThemeToggle() {
           setTheme(next);
         }}
         className={cn(
-          'flex items-center justify-center w-10 h-10 rounded-lg',
+          'flex items-center justify-center w-9 h-9 rounded-md',
           'border border-neutral-200 bg-background hover:bg-neutral-50',
           'dark:border-[rgba(148,163,184,0.24)] dark:bg-neutral-800 dark:hover:bg-neutral-700',
           'transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50',
@@ -110,7 +110,7 @@ export function ThemeToggleDropdown() {
 
   if (!mounted) {
     return (
-      <div className="flex items-center justify-center w-10 h-10 rounded-lg border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] bg-background dark:bg-neutral-800">
+      <div className="flex items-center justify-center w-9 h-9 rounded-md border border-neutral-200 dark:border-[rgba(148,163,184,0.24)] bg-background dark:bg-neutral-800">
         <div className="w-4 h-4 rounded-full bg-neutral-300 animate-pulse" />
       </div>
     );
@@ -127,7 +127,7 @@ export function ThemeToggleDropdown() {
         onMouseDown={(e) => e.preventDefault()}
         onClick={() => setIsOpen(!isOpen)}
         className={cn(
-          'flex items-center justify-center w-10 h-10 rounded-lg',
+          'flex items-center justify-center w-9 h-9 rounded-md',
           'border border-neutral-200 bg-background hover:bg-neutral-50',
           'dark:border-[rgba(148,163,184,0.24)] dark:bg-neutral-800 dark:hover:bg-neutral-700',
           'transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/50',
