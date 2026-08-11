@@ -59,14 +59,14 @@ export default function Profile({ author, social }: ProfileProps) {
     setCopyStatus(copied ? 'copied' : 'error');
 
     if (copyResetTimer.current) clearTimeout(copyResetTimer.current);
-    copyResetTimer.current = setTimeout(() => setCopyStatus('idle'), 3000);
+    copyResetTimer.current = setTimeout(() => setCopyStatus('idle'), 1800);
   };
 
   const emailButtonText =
     copyStatus === 'copied'
       ? isChinese
-        ? '已复制到剪贴板'
-        : 'Copied to clipboard'
+        ? '已复制'
+        : 'Copied!'
       : copyStatus === 'error'
         ? isChinese
           ? '复制失败'
