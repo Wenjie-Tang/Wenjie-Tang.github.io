@@ -20,15 +20,16 @@ export default function ActionLinks({ actions }: { actions?: ActionLink[] }) {
       {actions.map((action) => {
         const Icon = iconByType[action.type || 'project'];
         const external = /^https?:\/\//.test(action.href);
+        const opensInNewTab = external || action.type === 'pdf';
 
         return (
           <a
             key={`${action.label}-${action.href}`}
             href={action.href}
-            target={external ? '_blank' : undefined}
-            rel={external ? 'noopener noreferrer' : undefined}
+            target={opensInNewTab ? '_blank' : undefined}
+            rel={opensInNewTab ? 'noopener noreferrer' : undefined}
             className="action-link"
-            aria-label={`${action.label}${external ? ' (opens in a new tab)' : ''}`}
+            aria-label={`${action.label}${opensInNewTab ? ' (opens in a new tab)' : ''}`}
           >
             <Icon aria-hidden="true" size={15} strokeWidth={1.8} />
             <span>{action.label}</span>

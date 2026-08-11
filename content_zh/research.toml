@@ -45,6 +45,7 @@ content = "研究设计师如何在创意工作中选择、协调与调整多个
 metrics = ["28 名设计师", "访谈与工作流走查"]
 tags = ["人机协同", "生成式人工智能", "质性研究"]
 methods = ["半结构化访谈", "归纳主题分析", "质性编码"]
+actions = [{ label = "论文 PDF", href = "/multi-genai-creative-workflows-chi27.pdf", type = "pdf" }]
 teaser = "GEN-03"
 teaser_label = "可调整的生成式人工智能工具组合"
 

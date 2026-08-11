@@ -45,6 +45,7 @@ content = "Studied how designers select, coordinate, and adapt multiple GenAI to
 metrics = ["28 designers", "Interviews and workflow walkthroughs"]
 tags = ["Human-AI Collaboration", "Generative AI", "Qualitative Research"]
 methods = ["Semi-Structured Interviews", "Inductive Thematic Analysis", "Qualitative Coding"]
+actions = [{ label = "Paper PDF", href = "/multi-genai-creative-workflows-chi27.pdf", type = "pdf" }]
 teaser = "GEN-03"
 teaser_label = "Coordinating a revisable GenAI tool repertoire"
 
