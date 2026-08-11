@@ -4,41 +4,131 @@ title = "代表性奖项与资助"
 description = "在科技、设计、创新与社会实践领域获得 2 项国家级奖项、4 项省级/国家级资助、15 项省级奖项与 6 项个人荣誉。"
 
 [[items]]
-title = "第十四届挑战杯全国银奖"
-date = "2024"
-content = "前 0.21%"
+date = "2026"
+title = "中国大学生计算机设计大赛（4C）大数据应用省级一等奖"
+content = "前 10%"
+featured = true
 
 [[items]]
-title = "2026 米兰设计周竞赛全国三等奖"
 date = "2026"
+title = "中国大学生计算机设计大赛（4C）数字媒体静态设计省级二等奖"
+featured = false
+
+[[items]]
+date = "2026"
+title = "米兰设计周中国高校设计学科师生优秀作品展省级一等奖"
+featured = false
+
+[[items]]
+date = "2026"
+title = "米兰设计周中国高校设计学科师生优秀作品展省级二等奖"
+featured = false
+
+[[items]]
+date = "2026"
+title = "米兰设计周中国高校设计学科师生优秀作品展省级三等奖（2 项）"
+featured = false
+
+[[items]]
+date = "2026"
+title = "米兰设计周中国高校设计学科师生优秀作品展全国三等奖"
 content = "前 0.6%"
+featured = true
 
 [[items]]
-title = "中国大学生计算机设计大赛省级一等奖"
 date = "2026"
-content = "前 10%"
+title = "中南大学大学生创新创业训练计划项目结题评定“良好”"
+featured = false
 
 [[items]]
-title = "国家本科生创新创业培训计划资助"
 date = "2026"
+title = "国家级大学生创新创业训练计划项目"
 content = "20,000 元"
+featured = true
 
 [[items]]
-title = "中南大学学生管理团队优秀个人"
 date = "2025"
+title = "中南大学本科生三等奖学金"
+featured = true
+
+[[items]]
+date = "2025"
+title = "学生管理团队优秀个人"
 content = "前 1%"
+featured = true
 
 [[items]]
-title = "中南大学学业二等奖学金"
 date = "2025"
-content = "前 10%"
+title = "全国大学生暑期社会实践志愿服务活动“推普助力乡村振兴”入选团队"
+featured = true
 
 [[items]]
-title = "省级本科生创新创业培训计划资助"
-date = "2024/2025"
-content = "10,000 元"
+date = "2025"
+title = "中南大学大学生创新创业训练计划优秀论文奖"
+featured = false
 
 [[items]]
-title = "国家推普助力乡村振兴社会实践资助"
+date = "2025"
+title = "中南大学大学生创新创业训练计划优秀项目"
+featured = false
+
+[[items]]
+date = "2025"
+title = "省级大学生创新创业训练计划项目"
+featured = true
+
+[[items]]
 date = "2024"
-content = "3,000 元"
+title = "中南大学本科生二等奖学金"
+featured = false
+
+[[items]]
+date = "2024"
+title = "学生管理团队优秀成员"
+featured = false
+
+[[items]]
+date = "2024"
+title = "五四评优—学生组织活动积极分子"
+featured = false
+
+[[items]]
+date = "2024"
+title = "五四评优—优秀学生组织成员"
+featured = false
+
+[[items]]
+date = "2024"
+title = "第十四届“挑战杯”中国大学生创业计划竞赛全国银奖"
+content = "前 0.21%"
+featured = true
+
+[[items]]
+date = "2024"
+title = "中国国际大学生创新大赛省级二等奖"
+featured = false
+
+[[items]]
+date = "2024"
+title = "中国大学生计算机设计大赛（4C）信息可视化设计二等奖"
+featured = false
+
+[[items]]
+date = "2024"
+title = "中国大学生计算机设计大赛（4C）数字媒体静态设计三等奖"
+featured = false
+
+[[items]]
+date = "2024"
+title = "中南大学第十八届“升华杯”大学生创业计划竞赛银奖"
+featured = false
+
+[[items]]
+date = "2024"
+title = "省级大学生创新创业训练计划项目"
+featured = false
+
+[[items]]
+date = "2024"
+title = "省级大学生暑期“三下乡”社会实践项目"
+featured = false

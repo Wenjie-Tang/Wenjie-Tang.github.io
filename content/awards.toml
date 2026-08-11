@@ -4,41 +4,131 @@ title = "Selected Awards & Grants"
 description = "2 National Awards, 4 Provincial/National Grants, 15 Provincial Awards, and 6 Individual Honors across technology, design, innovation, and social practice."
 
 [[items]]
-title = "National Silver Medal, 14th Challenge Cup"
-date = "2024"
-content = "Top 0.21%"
+date = "2026"
+title = "First Prize (Provincial Level), Chinese Collegiate Computing Competition (4C) – Big Data Applications"
+content = "Top 10%"
+featured = true
 
 [[items]]
-title = "National Third Prize, 2026 Milan Design Week Competition"
 date = "2026"
+title = "Second Prize (Provincial Level), Chinese Collegiate Computing Competition (4C) – Digital Media Static Design"
+featured = false
+
+[[items]]
+date = "2026"
+title = "First Prize (Provincial Level), Milan Design Week China Collegiate Design Competition & Exhibition"
+featured = false
+
+[[items]]
+date = "2026"
+title = "Second Prize (Provincial Level), Milan Design Week China Collegiate Design Competition & Exhibition"
+featured = false
+
+[[items]]
+date = "2026"
+title = "Two Third Prizes (Provincial Level), Milan Design Week China Collegiate Design Competition & Exhibition"
+featured = false
+
+[[items]]
+date = "2026"
+title = "Third Prize (National Level), Milan Design Week China Collegiate Design Competition & Exhibition"
 content = "Top 0.6%"
+featured = true
 
 [[items]]
-title = "Provincial First Prize, China University Students Computer Design Contest"
 date = "2026"
-content = "Top 10%"
+title = "Project Rated “Good”, Central South University Student Innovation and Entrepreneurship Program"
+featured = false
 
 [[items]]
-title = "National Undergraduate Innovation and Entrepreneurship Training Program Grant"
 date = "2026"
+title = "National-Level Project, College Students’ Innovation and Entrepreneurship Training Program"
 content = "RMB 20,000"
+featured = true
 
 [[items]]
-title = "Outstanding Individual, Student Management Team, Central South University"
 date = "2025"
+title = "Third-Class Undergraduate Scholarship, Central South University"
+featured = true
+
+[[items]]
+date = "2025"
+title = "Distinguished Member, Student Management Team"
 content = "Top 1%"
+featured = true
 
 [[items]]
-title = "Second-Class Academic Scholarship, Central South University"
 date = "2025"
-content = "Top 10%"
+title = "Selected Team, National College Students’ Summer Social Practice Volunteer Program “Promoting Mandarin to Support Rural Revitalization”"
+featured = true
 
 [[items]]
-title = "Provincial Undergraduate Innovation and Entrepreneurship Training Program Grant"
-date = "2024/2025"
-content = "RMB 10,000"
+date = "2025"
+title = "Outstanding Paper Award, Central South University Student Innovation and Entrepreneurship Program"
+featured = false
 
 [[items]]
-title = "National Mandarin Promotion for Rural Revitalization Social Practice Grant"
+date = "2025"
+title = "Outstanding Project, Central South University Student Innovation and Entrepreneurship Program"
+featured = false
+
+[[items]]
+date = "2025"
+title = "Provincial-Level Project, College Students’ Innovation and Entrepreneurship Training Program"
+featured = true
+
+[[items]]
 date = "2024"
-content = "RMB 3,000"
+title = "Second-Class Undergraduate Scholarship, Central South University"
+featured = false
+
+[[items]]
+date = "2024"
+title = "Outstanding Member, Student Management Team"
+featured = false
+
+[[items]]
+date = "2024"
+title = "May Fourth Honors – Active Contributor to Student Organization Activities"
+featured = false
+
+[[items]]
+date = "2024"
+title = "May Fourth Honors – Outstanding Member of Student Organizations"
+featured = false
+
+[[items]]
+date = "2024"
+title = "National Silver Award, 14th “Challenge Cup” China University Students’ Entrepreneurship Plan Competition"
+content = "Top 0.21%"
+featured = true
+
+[[items]]
+date = "2024"
+title = "Second Prize (Provincial Level), China International College Students’ Innovation Competition"
+featured = false
+
+[[items]]
+date = "2024"
+title = "Second Prize, Chinese Collegiate Computing Competition (4C) – Information Visualization Design"
+featured = false
+
+[[items]]
+date = "2024"
+title = "Third Prize, Chinese Collegiate Computing Competition (4C) – Digital Media Static Design"
+featured = false
+
+[[items]]
+date = "2024"
+title = "Silver Award, 18th “Shenghua Cup” Student Entrepreneurship Plan Competition, Central South University"
+featured = false
+
+[[items]]
+date = "2024"
+title = "Provincial-Level Project, College Students’ Innovation and Entrepreneurship Training Program"
+featured = false
+
+[[items]]
+date = "2024"
+title = "Provincial-Level Project, College Students’ Summer “Three Rural Areas” Social Practice Program"
+featured = false

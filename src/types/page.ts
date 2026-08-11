@@ -40,6 +40,7 @@ export interface CardItem {
     image?: string;
     teaser?: string;
     teaser_label?: string;
+    featured?: boolean;
 }
 
 export interface CardPageConfig extends BasePageConfig {

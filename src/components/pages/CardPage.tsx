@@ -5,6 +5,7 @@ import ResearchCard from '@/components/research/ResearchCard';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Tag from '@/components/ui/Tag';
 import ActionLinks from '@/components/ui/ActionLinks';
+import AwardsList from '@/components/pages/AwardsList';
 import { ExternalEntityText } from '@/components/ui/ExternalEntityLink';
 import type { CardItem, CardPageConfig } from '@/types/page';
 import { facultyEntityKeys, organizationEntityKeys } from '@/lib/externalEntities';
@@ -80,22 +81,6 @@ function CompactItem({ item, variant }: { item: CardItem; variant: CardPageConfi
   );
 }
 
-function AwardItem({ item }: { item: CardItem }) {
-  return (
-    <li className="award-item">
-      <span className="award-date">{item.date}</span>
-      <div>
-        <h3 className="award-title">
-          <ExternalEntityText entities={organizationEntityKeys}>{item.title}</ExternalEntityText>
-        </h3>
-        {(item.subtitle || item.content) && (
-          <p className="award-detail">{[item.subtitle, item.content].filter(Boolean).join(' · ')}</p>
-        )}
-      </div>
-    </li>
-  );
-}
-
 export default function CardPage({ config, embedded = false }: { config: CardPageConfig; embedded?: boolean }) {
   const variant = config.variant || 'compact';
 
@@ -121,9 +106,7 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
       )}
 
       {variant === 'awards' && (
-        <ul className="award-list">
-          {config.items.map((item) => <AwardItem key={`${item.title}-${item.date}`} item={item} />)}
-        </ul>
+        <AwardsList items={config.items} />
       )}
 
       {(variant === 'compact' || variant === 'clusters') && (
