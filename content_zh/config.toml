@@ -5,15 +5,15 @@ favicon = "/favicon.svg"
 last_updated = "2026年8月11日"
 
 [author]
-name = "Wenjie Tang"
-title = "人机交互本科研究者"
+name = "汤雯捷"
 institution = "产品设计 · 中南大学"
-tagline = "构建并研究人工智能与扩展现实驱动的交互系统。"
 avatar = "/profile.webp"
 
 [social]
 email = "tangwenjie@csu.edu.cn"
-location = "中国长沙"
+location = "家乡：中国盐城"
+location_url = "https://whgdj.yancheng.gov.cn/yc/index.html"
+location_details = ["生日：2005.05.12"]
 github = "https://github.com/Wenjie-Tang"
 
 [features]
@@ -21,7 +21,7 @@ enable_likes = false
 enable_one_page_mode = true
 
 [homepage]
-sections = ["about", "research", "publications", "research-experience", "experience", "education", "awards", "skills", "community"]
+sections = ["about", "research", "publications", "research-experience", "experience", "awards", "skills", "community"]
 
 [[navigation]]
 title = "关于"
@@ -52,12 +52,6 @@ title = "行业经历"
 type = "page"
 target = "experience"
 href = "/experience"
-
-[[navigation]]
-title = "教育"
-type = "page"
-target = "education"
-href = "/education"
 
 [[navigation]]
 title = "奖项"

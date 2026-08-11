@@ -62,10 +62,14 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
           <Profile
             author={data.author}
             social={data.social}
-            features={data.features}
-            researchInterests={data.researchInterests}
           />
-          {biography && <About content={biography.content || ''} title={biography.title} />}
+          {biography && (
+            <About
+              content={biography.content || ''}
+              title={biography.title}
+              researchInterests={data.researchInterests}
+            />
+          )}
         </div>
         {news && <News items={news.items || []} title={news.title} />}
       </section>

@@ -6,14 +6,14 @@ last_updated = "August 11, 2026"
 
 [author]
 name = "Wenjie Tang"
-title = "Undergraduate Researcher in Human-Computer Interaction"
 institution = "Product Design · Central South University"
-tagline = "Building and studying AI- and XR-enabled interactive systems."
 avatar = "/profile.webp"
 
 [social]
 email = "tangwenjie@csu.edu.cn"
-location = "Changsha, China"
+location = "Hometown: Yancheng, China"
+location_url = "https://whgdj.yancheng.gov.cn/yc/index.html"
+location_details = ["Birthday: 2005.05.12"]
 github = "https://github.com/Wenjie-Tang"
 
 [features]
@@ -21,7 +21,7 @@ enable_likes = false
 enable_one_page_mode = true
 
 [homepage]
-sections = ["about", "research", "publications", "research-experience", "experience", "education", "awards", "skills", "community"]
+sections = ["about", "research", "publications", "research-experience", "experience", "awards", "skills", "community"]
 
 [i18n]
 enabled = true
@@ -65,12 +65,6 @@ title = "Industry"
 type = "page"
 target = "experience"
 href = "/experience"
-
-[[navigation]]
-title = "Education"
-type = "page"
-target = "education"
-href = "/education"
 
 [[navigation]]
 title = "Awards"

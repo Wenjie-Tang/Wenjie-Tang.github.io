@@ -1,4 +1,4 @@
-export type ExternalEntityType = 'university' | 'lab' | 'company' | 'faculty';
+export type ExternalEntityType = 'university' | 'lab' | 'company' | 'faculty' | 'program';
 
 interface ExternalEntity {
   en: string;
@@ -84,6 +84,16 @@ export const externalEntities = {
     type: 'faculty',
     aliases: ['Prof. Ray LC', 'Ray LC'],
   },
+  nationalUndergraduateInnovationProgram: {
+    en: 'National Undergraduate Innovation and Entrepreneurship Training Program',
+    zh: '国家本科生创新创业培训计划',
+    url: 'http://gjcxcy.bjtu.edu.cn/',
+    type: 'program',
+    aliases: [
+      'National Undergraduate Innovation and Entrepreneurship Training Program',
+      '国家本科生创新创业培训计划',
+    ],
+  },
 } as const satisfies Record<string, ExternalEntity>;
 
 export type ExternalEntityKey = keyof typeof externalEntities;
@@ -102,6 +112,11 @@ export const organizationEntityKeys = [
 export const facultyEntityKeys = [
   'hainingLiang',
   'rayLC',
+] as const satisfies readonly ExternalEntityKey[];
+
+export const newsEntityKeys = [
+  ...organizationEntityKeys,
+  'nationalUndergraduateInnovationProgram',
 ] as const satisfies readonly ExternalEntityKey[];
 
 export const allExternalEntityKeys = [
