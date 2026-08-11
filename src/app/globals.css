@@ -469,6 +469,48 @@ textarea:focus-visible {
   text-underline-offset: 3px;
 }
 
+.external-entity-link {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.external-entity-icon {
+  display: inline-block;
+  width: 0.6875rem;
+  height: 0.6875rem;
+  margin-left: 0.12rem;
+  vertical-align: 0.05em;
+  opacity: 0.4;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.external-entity-link:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--accent) 70%, transparent);
+}
+
+.external-entity-link:hover .external-entity-icon {
+  opacity: 0.85;
+  transform: translate(1px, -1px);
+}
+
+.dark .external-entity-link:hover {
+  color: var(--accent-light);
+}
+
+.about-copy .external-entity-link,
+.prose-cv .external-entity-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 .news-section {
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);

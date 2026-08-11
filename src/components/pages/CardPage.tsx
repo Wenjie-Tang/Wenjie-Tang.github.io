@@ -5,12 +5,18 @@ import ResearchCard from '@/components/research/ResearchCard';
 import SectionHeading from '@/components/ui/SectionHeading';
 import Tag from '@/components/ui/Tag';
 import ActionLinks from '@/components/ui/ActionLinks';
+import { ExternalEntityText } from '@/components/ui/ExternalEntityLink';
 import type { CardItem, CardPageConfig } from '@/types/page';
+import { facultyEntityKeys, organizationEntityKeys } from '@/lib/externalEntities';
 
 function ItemMetadata({ item }: { item: CardItem }) {
   const values = [item.role, item.advisor, item.location].filter(Boolean);
   if (!values.length) return null;
-  return <p className="timeline-metadata">{values.join(' · ')}</p>;
+  return (
+    <p className="timeline-metadata">
+      <ExternalEntityText entities={facultyEntityKeys}>{values.join(' · ')}</ExternalEntityText>
+    </p>
+  );
 }
 
 function TimelineItem({ item }: { item: CardItem }) {
@@ -21,7 +27,9 @@ function TimelineItem({ item }: { item: CardItem }) {
         <div className="timeline-heading-row">
           <div>
             {item.eyebrow && <span className="eyebrow">{item.eyebrow}</span>}
-            <h3 className="timeline-title">{item.title}</h3>
+            <h3 className="timeline-title">
+              <ExternalEntityText entities={organizationEntityKeys}>{item.title}</ExternalEntityText>
+            </h3>
           </div>
           {item.status && <span className="status-label">{item.status}</span>}
         </div>
@@ -52,7 +60,9 @@ function CompactItem({ item, variant }: { item: CardItem; variant: CardPageConfi
       <div className="compact-heading-row">
         <div>
           {item.eyebrow && <span className="eyebrow">{item.eyebrow}</span>}
-          <h3 className="compact-title">{item.title}</h3>
+          <h3 className="compact-title">
+            <ExternalEntityText entities={organizationEntityKeys}>{item.title}</ExternalEntityText>
+          </h3>
         </div>
         {item.date && <span className="compact-date">{item.date}</span>}
       </div>
@@ -75,7 +85,9 @@ function AwardItem({ item }: { item: CardItem }) {
     <li className="award-item">
       <span className="award-date">{item.date}</span>
       <div>
-        <h3 className="award-title">{item.title}</h3>
+        <h3 className="award-title">
+          <ExternalEntityText entities={organizationEntityKeys}>{item.title}</ExternalEntityText>
+        </h3>
         {(item.subtitle || item.content) && (
           <p className="award-detail">{[item.subtitle, item.content].filter(Boolean).join(' · ')}</p>
         )}

@@ -2,6 +2,8 @@
 
 import { motion } from 'framer-motion';
 import { useMessages } from '@/lib/i18n/useMessages';
+import { ExternalEntityText } from '@/components/ui/ExternalEntityLink';
+import { organizationEntityKeys } from '@/lib/externalEntities';
 
 export interface NewsItem {
   date: string;
@@ -32,7 +34,7 @@ export default function News({ items, title }: NewsProps) {
         {items.map((item, index) => (
           <li key={`${item.date}-${index}`}>
             <time>{item.date}</time>
-            <p>{item.content}</p>
+            <p><ExternalEntityText entities={organizationEntityKeys}>{item.content}</ExternalEntityText></p>
           </li>
         ))}
       </ol>

@@ -3,8 +3,10 @@
 import Image from 'next/image';
 import ActionLinks from '@/components/ui/ActionLinks';
 import Tag from '@/components/ui/Tag';
+import { ExternalEntityText } from '@/components/ui/ExternalEntityLink';
 import type { CardItem } from '@/types/page';
 import { useLocaleStore } from '@/lib/stores/localeStore';
+import { facultyEntityKeys, organizationEntityKeys } from '@/lib/externalEntities';
 
 export default function ResearchCard({ item }: { item: CardItem }) {
   const locale = useLocaleStore((state) => state.locale);
@@ -42,8 +44,16 @@ export default function ResearchCard({ item }: { item: CardItem }) {
           {item.status && <span className="status-label">{item.status}</span>}
         </div>
         <h3 className="research-title">{item.title}</h3>
-        {item.affiliation && <p className="research-affiliation">{item.affiliation}</p>}
-        {metadata.length > 0 && <p className="research-metadata">{metadata.join(' · ')}</p>}
+        {item.affiliation && (
+          <p className="research-affiliation">
+            <ExternalEntityText entities={organizationEntityKeys}>{item.affiliation}</ExternalEntityText>
+          </p>
+        )}
+        {metadata.length > 0 && (
+          <p className="research-metadata">
+            <ExternalEntityText entities={facultyEntityKeys}>{metadata.join(' · ')}</ExternalEntityText>
+          </p>
+        )}
         {item.content && <p className="research-summary">{item.content}</p>}
 
         {item.metrics && item.metrics.length > 0 && (

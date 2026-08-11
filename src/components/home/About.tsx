@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import { useMessages } from '@/lib/i18n/useMessages';
 import { useLocaleStore } from '@/lib/stores/localeStore';
+import {
+  ExternalEntityChildren,
+  ExternalEntityMarkdownLink,
+} from '@/components/ui/ExternalEntityLink';
 
 interface AboutProps {
   content: string;
@@ -26,9 +30,11 @@ export default function About({ content, title }: AboutProps) {
       <div className="about-copy">
         <ReactMarkdown
           components={{
-            p: ({ children }) => <p>{children}</p>,
-            a: (props) => <a {...props} target="_blank" rel="noopener noreferrer" />,
-            strong: ({ children }) => <strong>{children}</strong>,
+            p: ({ children }) => <p><ExternalEntityChildren>{children}</ExternalEntityChildren></p>,
+            a: ExternalEntityMarkdownLink,
+            strong: ({ children }) => (
+              <strong><ExternalEntityChildren>{children}</ExternalEntityChildren></strong>
+            ),
           }}
         >
           {content}

@@ -4,6 +4,10 @@ import { motion } from 'framer-motion';
 import ReactMarkdown from 'react-markdown';
 import SectionHeading from '@/components/ui/SectionHeading';
 import type { TextPageConfig } from '@/types/page';
+import {
+  ExternalEntityChildren,
+  ExternalEntityMarkdownLink,
+} from '@/components/ui/ExternalEntityLink';
 
 interface TextPageProps {
   config: TextPageConfig;
@@ -23,17 +27,19 @@ export default function TextPage({ config, content, embedded = false }: TextPage
       <div className="prose-cv">
         <ReactMarkdown
           components={{
-            h1: ({ children }) => <h2>{children}</h2>,
-            h2: ({ children }) => <h2>{children}</h2>,
-            h3: ({ children }) => <h3>{children}</h3>,
-            p: ({ children }) => <p>{children}</p>,
+            h1: ({ children }) => <h2><ExternalEntityChildren>{children}</ExternalEntityChildren></h2>,
+            h2: ({ children }) => <h2><ExternalEntityChildren>{children}</ExternalEntityChildren></h2>,
+            h3: ({ children }) => <h3><ExternalEntityChildren>{children}</ExternalEntityChildren></h3>,
+            p: ({ children }) => <p><ExternalEntityChildren>{children}</ExternalEntityChildren></p>,
             ul: ({ children }) => <ul>{children}</ul>,
             ol: ({ children }) => <ol>{children}</ol>,
-            li: ({ children }) => <li>{children}</li>,
-            a: (props) => <a {...props} target="_blank" rel="noopener noreferrer" />,
+            li: ({ children }) => <li><ExternalEntityChildren>{children}</ExternalEntityChildren></li>,
+            a: ExternalEntityMarkdownLink,
             blockquote: ({ children }) => <blockquote>{children}</blockquote>,
-            strong: ({ children }) => <strong>{children}</strong>,
-            em: ({ children }) => <em>{children}</em>,
+            strong: ({ children }) => (
+              <strong><ExternalEntityChildren>{children}</ExternalEntityChildren></strong>
+            ),
+            em: ({ children }) => <em><ExternalEntityChildren>{children}</ExternalEntityChildren></em>,
           }}
         >
           {content}

@@ -5,7 +5,9 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { FileText, Github, Mail, MapPin } from 'lucide-react';
 import Tag from '@/components/ui/Tag';
+import { ExternalEntityText } from '@/components/ui/ExternalEntityLink';
 import type { SiteConfig } from '@/lib/config';
+import { organizationEntityKeys } from '@/lib/externalEntities';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
 interface ProfileProps {
@@ -40,7 +42,9 @@ export default function Profile({ author, social, researchInterests }: ProfilePr
       <div className="profile-identity">
         <h1>{author.name}</h1>
         <p className="profile-title">{author.title}</p>
-        <p className="profile-institution">{author.institution}</p>
+        <p className="profile-institution">
+          <ExternalEntityText entities={organizationEntityKeys}>{author.institution}</ExternalEntityText>
+        </p>
         {author.tagline && <p className="profile-tagline">{author.tagline}</p>}
       </div>
 
