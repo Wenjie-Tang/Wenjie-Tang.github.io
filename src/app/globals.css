@@ -351,6 +351,7 @@ textarea:focus-visible {
 }
 
 .profile-actions a,
+.profile-actions button,
 .action-link {
   display: inline-flex;
   align-items: center;
@@ -370,10 +371,23 @@ textarea:focus-visible {
 }
 
 .profile-actions a:hover,
+.profile-actions button:hover,
 .action-link:hover {
   color: var(--accent-dark);
   border-color: var(--accent);
   transform: translateY(-1px);
+}
+
+.profile-email-copy {
+  min-width: 13.75rem;
+  appearance: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.profile-email-copy.is-copied {
+  color: var(--success);
+  border-color: var(--success);
 }
 
 .profile-details {
@@ -1213,6 +1227,7 @@ textarea:focus-visible {
 
 @media (max-width: 390px) {
   .profile-actions a,
+  .profile-actions button,
   .action-link {
     padding-inline: 0.58rem;
   }
