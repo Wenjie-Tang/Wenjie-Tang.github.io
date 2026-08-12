@@ -48,10 +48,12 @@ methods = ["半结构化访谈", "归纳主题分析", "质性编码"]
 actions = [{ label = "论文 PDF", href = "/multi-genai-creative-workflows-chi27.pdf", type = "pdf" }]
 teaser = "GEN-03"
 teaser_label = "可调整的生成式人工智能工具组合"
+image = "/images/research/genai-cover.svg"
 
 [[items]]
 eyebrow = "可解释人工智能 · 医疗"
 title = "基于可解释 GATv2 的心血管药物相互作用人机决策支持系统"
+title_link = "https://ieeexplore.ieee.org/document/11544474/authors#authors"
 affiliation = "中南大学"
 role = "项目负责人"
 advisor = "导师：刘思敏教授、Zhenxiao Zhang"
@@ -63,6 +65,7 @@ tags = ["可解释人工智能", "医疗人机交互", "人机交互"]
 methods = ["PyTorch", "FastAPI", "SQLite", "OCR", "Qwen API", "GATv2"]
 teaser = "XAI-04"
 teaser_label = "面向药物相互作用的可解释决策支持"
+image = "/images/research/ddi-cover.svg"
 
 [[items]]
 eyebrow = "家庭人机交互 · 交互设计"
@@ -78,3 +81,4 @@ tags = ["家庭人机交互", "具身交互", "代际互动"]
 methods = ["半结构化访谈", "主题分析", "可用性测试", "硬件原型"]
 teaser = "FAM-05"
 teaser_label = "支持代际协作的互动游戏"
+image = "/images/research/intergenerational-cover.svg"

@@ -20,18 +20,21 @@ function ItemMetadata({ item }: { item: CardItem }) {
   );
 }
 
-function TimelineItem({ item }: { item: CardItem }) {
+function TimelineItem({ item, datePosition = 'aside' }: { item: CardItem; datePosition?: CardPageConfig['date_position'] }) {
+  const headerDate = datePosition === 'header';
+
   return (
-    <article className="timeline-item">
-      <div className="timeline-date">{item.date}</div>
+    <article className={`timeline-item${headerDate ? ' timeline-item--header-date' : ''}`}>
+      {!headerDate && item.date && <div className="timeline-date">{item.date}</div>}
       <div className="timeline-body">
         <div className="timeline-heading-row">
-          <div>
+          <div className="timeline-heading-main">
             {item.eyebrow && <span className="eyebrow">{item.eyebrow}</span>}
             <h3 className="timeline-title">
               <ExternalEntityText entities={organizationEntityKeys}>{item.title}</ExternalEntityText>
             </h3>
           </div>
+          {headerDate && item.date && <div className="timeline-date">{item.date}</div>}
           {item.status && <span className="status-label">{item.status}</span>}
         </div>
         {item.subtitle && <p className="timeline-subtitle">{item.subtitle}</p>}
@@ -111,7 +114,13 @@ export default function CardPage({
 
       {variant === 'timeline' && (
         <div className="timeline-list">
-          {config.items.map((item) => <TimelineItem key={`${item.title}-${item.date}`} item={item} />)}
+          {config.items.map((item) => (
+            <TimelineItem
+              key={`${item.title}-${item.date}`}
+              item={item}
+              datePosition={config.date_position}
+            />
+          ))}
         </div>
       )}
 

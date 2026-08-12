@@ -1,5 +1,6 @@
 type = "card"
 variant = "timeline"
+date_position = "header"
 title = "行业经历"
 description = "在科技与媒体机构开展产品、实验和人机创意工作流实践。"
 

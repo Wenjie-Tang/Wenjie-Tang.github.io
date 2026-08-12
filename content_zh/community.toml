@@ -1,7 +1,15 @@
 type = "card"
-variant = "compact"
-title = "社区与服务"
-description = "面向教学、文化保护与社区设计的田野实践。"
+variant = "timeline"
+date_position = "header"
+title = "社区、领导力与服务"
+description = "社区参与、学生领导力、文化实践与学术服务。"
+
+[[items]]
+title = "中南大学学生指导服务中心"
+subtitle = "新媒体中心负责人"
+location = "中国长沙"
+date = "2023 年 5 月 – 2025 年 9 月"
+content = "负责“Study at CSU”等高校新媒体平台的内容策划与运营，涵盖选题、写作、视觉传播和受众互动。制作 50 余篇多媒体内容，单篇最高获得 10 万余次阅读和 1.2 万余次转发，并招募、指导 20 余名学生成员。"
 
 [[items]]
 title = "“源头活水”支教志愿项目"
@@ -23,3 +31,24 @@ subtitle = "闻“乡”路团队核心成员、宣传组负责人"
 location = "中国黑石铺社区"
 date = "2024年9月"
 content = "开展社区语言活动与田野数据收集，将参与者需求转化为项目优化与传播建议。"
+
+[[items]]
+title = "班级学业与创新工作"
+subtitle = "学业事务与创新创业委员"
+location = "中南大学 | 中国长沙"
+date = "2023 年 9 月 – 2024 年 9 月"
+content = "协助开展学业沟通与创新活动，帮助同学对接学习资源、竞赛和创业机会。"
+
+[[items]]
+title = "青年志愿者协会活动"
+subtitle = "社区志愿者"
+location = "中国长沙"
+date = "2023 年 11 月"
+content = "参与社区老年 E 课堂和湘雅医院慈善音乐会，为老年群体及其他公益项目提供支持。"
+
+[[items]]
+title = "中南大学学业发展开放日"
+subtitle = "引导员与讲解员"
+location = "中国长沙"
+date = "2023 年 9 月"
+content = "在学校学业发展开放日介绍学业资源与活动，并协助现场沟通与引导。"

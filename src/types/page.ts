@@ -37,6 +37,7 @@ export interface CardItem {
     bullets?: string[];
     actions?: ActionLink[];
     link?: string;
+    title_link?: string;
     image?: string;
     teaser?: string;
     teaser_label?: string;
@@ -46,5 +47,6 @@ export interface CardItem {
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
     variant?: 'research' | 'timeline' | 'compact' | 'awards' | 'clusters';
+    date_position?: 'aside' | 'header';
     items: CardItem[];
 }

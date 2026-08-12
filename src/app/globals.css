@@ -601,7 +601,9 @@ textarea:focus-visible {
 }
 
 .section-description {
+  width: min(100%, 36rem);
   max-width: 720px;
+  justify-self: end;
   padding-top: 0.2rem;
   color: var(--neutral-600);
   font-size: 0.875rem;
@@ -685,6 +687,14 @@ textarea:focus-visible {
   background: var(--neutral-100);
 }
 
+.research-cover {
+  object-fit: cover;
+}
+
+.research-cover-diagram {
+  background: var(--neutral-100);
+}
+
 .research-teaser {
   display: flex;
   min-height: 100%;
@@ -762,6 +772,42 @@ textarea:focus-visible {
   font-weight: 650;
   line-height: 1.35;
   overflow-wrap: anywhere;
+}
+
+.research-title-link {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.research-title-link-icon {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.28em;
+  vertical-align: 0.04em;
+  opacity: 0.55;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.research-title-link:hover,
+.research-title-link:focus-visible {
+  color: var(--accent-dark);
+  text-decoration-color: currentColor;
+}
+
+.research-title-link:hover .research-title-link-icon,
+.research-title-link:focus-visible .research-title-link-icon {
+  opacity: 0.9;
+  transform: translate(1px, -1px);
+}
+
+.dark .research-title-link:hover,
+.dark .research-title-link:focus-visible {
+  color: var(--accent-light);
 }
 
 .research-affiliation {
@@ -914,6 +960,11 @@ textarea:focus-visible {
   border-top: 1px solid var(--neutral-200);
 }
 
+.timeline-item--header-date {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
 .timeline-item:last-child {
   border-bottom: 1px solid var(--neutral-200);
 }
@@ -925,6 +976,16 @@ textarea:focus-visible {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.timeline-heading-main {
+  min-width: 0;
+}
+
+.timeline-item--header-date .timeline-date {
+  flex: 0 0 auto;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .timeline-title,
@@ -939,6 +1000,7 @@ textarea:focus-visible {
 .timeline-title {
   margin-top: 0.2rem;
   font-size: var(--text-card-title);
+  overflow-wrap: anywhere;
 }
 
 .timeline-subtitle,
@@ -1177,6 +1239,12 @@ textarea:focus-visible {
     gap: 0.9rem;
   }
 
+  .section-description {
+    width: 100%;
+    max-width: 720px;
+    justify-self: start;
+  }
+
   .research-card {
     grid-template-columns: minmax(205px, 29%) minmax(0, 1fr);
   }
@@ -1272,6 +1340,10 @@ textarea:focus-visible {
   .timeline-item {
     gap: 0.4rem;
     padding: 0.875rem 0;
+  }
+
+  .timeline-item--header-date .timeline-date {
+    text-align: left;
   }
 
   .publication-card {

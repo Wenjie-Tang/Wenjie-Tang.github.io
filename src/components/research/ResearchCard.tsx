@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 import ActionLinks from '@/components/ui/ActionLinks';
 import Tag from '@/components/ui/Tag';
 import { ExternalEntityText } from '@/components/ui/ExternalEntityLink';
@@ -12,6 +13,7 @@ export default function ResearchCard({ item }: { item: CardItem }) {
   const locale = useLocaleStore((state) => state.locale);
   const isChinese = locale.startsWith('zh');
   const metadata = [item.role, item.advisor, item.date].filter(Boolean);
+  const imageIsDiagram = item.image?.toLowerCase().endsWith('.svg');
 
   return (
     <article className="research-card">
@@ -21,7 +23,7 @@ export default function ResearchCard({ item }: { item: CardItem }) {
             src={item.image}
             alt={item.teaser_label || item.title}
             fill
-            className="object-cover"
+            className={imageIsDiagram ? 'research-cover research-cover-diagram' : 'research-cover'}
             sizes="(max-width: 767px) 100vw, 36vw"
           />
         ) : (
@@ -43,7 +45,20 @@ export default function ResearchCard({ item }: { item: CardItem }) {
           {item.eyebrow && <span className="eyebrow">{item.eyebrow}</span>}
           {item.status && <span className="status-label">{item.status}</span>}
         </div>
-        <h3 className="research-title">{item.title}</h3>
+        <h3 className="research-title">
+          {item.title_link ? (
+            <a
+              href={item.title_link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-title-link"
+            >
+              <span>{item.title}</span>
+              <ExternalLink className="research-title-link-icon" aria-hidden="true" size={14} strokeWidth={1.8} />
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
+          ) : item.title}
+        </h3>
         {item.affiliation && (
           <p className="research-affiliation">
             <ExternalEntityText entities={organizationEntityKeys}>{item.affiliation}</ExternalEntityText>
