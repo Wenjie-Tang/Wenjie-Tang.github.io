@@ -656,6 +656,11 @@ textarea:focus-visible {
   gap: var(--space-list);
 }
 
+.research-section-content {
+  display: grid;
+  gap: var(--space-card);
+}
+
 .research-card {
   display: grid;
   grid-template-columns: minmax(220px, 28%) minmax(0, 1fr);

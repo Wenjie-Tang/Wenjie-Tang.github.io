@@ -1,6 +1,6 @@
 type = "card"
 variant = "research"
-title = "Selected Research"
+title = "Research"
 description = "Research systems and studies spanning XR safety, human-AI collaboration, explainable healthcare AI, and family interaction."
 
 [[items]]

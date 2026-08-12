@@ -21,7 +21,7 @@ enable_likes = false
 enable_one_page_mode = true
 
 [homepage]
-sections = ["about", "research", "publications", "research-experience", "experience", "awards", "skills", "community"]
+sections = ["about", "research", "publications", "experience", "awards", "skills", "community"]
 
 [[navigation]]
 title = "关于"
@@ -40,12 +40,6 @@ title = "论文与专利"
 type = "page"
 target = "publications"
 href = "/publications"
-
-[[navigation]]
-title = "研究经历"
-type = "page"
-target = "research-experience"
-href = "/research-experience"
 
 [[navigation]]
 title = "行业经历"

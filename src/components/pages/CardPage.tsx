@@ -81,7 +81,15 @@ function CompactItem({ item, variant }: { item: CardItem; variant: CardPageConfi
   );
 }
 
-export default function CardPage({ config, embedded = false }: { config: CardPageConfig; embedded?: boolean }) {
+export default function CardPage({
+  config,
+  embedded = false,
+  showHeading = true,
+}: {
+  config: CardPageConfig;
+  embedded?: boolean;
+  showHeading?: boolean;
+}) {
   const variant = config.variant || 'compact';
 
   return (
@@ -91,7 +99,9 @@ export default function CardPage({ config, embedded = false }: { config: CardPag
       viewport={{ once: true, amount: 0.05 }}
       transition={{ duration: 0.45 }}
     >
-      <SectionHeading title={config.title} description={config.description} embedded={embedded} />
+      {showHeading && (
+        <SectionHeading title={config.title} description={config.description} embedded={embedded} />
+      )}
 
       {variant === 'research' && (
         <div className="research-list">

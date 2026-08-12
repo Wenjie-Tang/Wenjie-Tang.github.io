@@ -1,6 +1,6 @@
 type = "card"
 variant = "research"
-title = "精选研究"
+title = "研究"
 description = "涵盖扩展现实安全、人机协同、可解释医疗人工智能与家庭交互的系统研究与实证研究。"
 
 [[items]]

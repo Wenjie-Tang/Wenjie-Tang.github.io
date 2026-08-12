@@ -21,7 +21,7 @@ enable_likes = false
 enable_one_page_mode = true
 
 [homepage]
-sections = ["about", "research", "publications", "research-experience", "experience", "awards", "skills", "community"]
+sections = ["about", "research", "publications", "experience", "awards", "skills", "community"]
 
 [i18n]
 enabled = true
@@ -53,12 +53,6 @@ title = "Publications"
 type = "page"
 target = "publications"
 href = "/publications"
-
-[[navigation]]
-title = "Research Exp."
-type = "page"
-target = "research-experience"
-href = "/research-experience"
 
 [[navigation]]
 title = "Industry"

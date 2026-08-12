@@ -27,7 +27,7 @@ type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig; continuationConfig?: CardPageConfig };
 
 export interface HomePageLocaleData {
   author: SiteConfig['author'];
@@ -81,7 +81,14 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
               <PublicationsList config={page.config} publications={page.publications} embedded />
             )}
             {page.type === 'text' && <TextPage config={page.config} content={page.content} embedded />}
-            {page.type === 'card' && <CardPage config={page.config} embedded />}
+            {page.type === 'card' && (page.continuationConfig ? (
+              <div className="research-section-content">
+                <CardPage config={page.config} embedded />
+                <CardPage config={page.continuationConfig} embedded showHeading={false} />
+              </div>
+            ) : (
+              <CardPage config={page.config} embedded />
+            ))}
           </section>
         ))}
       </div>

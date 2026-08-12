@@ -27,7 +27,7 @@ type PageData =
   | { type: 'about'; id: string; sections: SectionConfig[] }
   | { type: 'publication'; id: string; config: PublicationPageConfig; publications: Publication[] }
   | { type: 'text'; id: string; config: TextPageConfig; content: string }
-  | { type: 'card'; id: string; config: CardPageConfig };
+  | { type: 'card'; id: string; config: CardPageConfig; continuationConfig?: CardPageConfig };
 
 function processSections(sections: SectionConfig[], locale?: string): SectionConfig[] {
   return sections.map((section: SectionConfig) => {
@@ -112,10 +112,15 @@ function loadPageDataForLocale(locale: string | undefined): HomePageLocaleData {
         }
 
         if (pageConfig.type === 'card') {
+          const continuationConfig = sectionId === 'research'
+            ? getPageConfig<CardPageConfig>('research-experience', locale) || undefined
+            : undefined;
+
           return {
             type: 'card',
             id: sectionId,
             config: pageConfig as CardPageConfig,
+            continuationConfig,
           } as PageData;
         }
 
