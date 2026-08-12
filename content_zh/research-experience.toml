@@ -1,6 +1,7 @@
 type = "card"
 variant = "timeline"
-title = "研究经历"
+date_position = "header"
+title = "科研经历"
 description = "聚焦扩展现实、具身交互与人机协同的当前及近期研究任职。"
 
 [[items]]

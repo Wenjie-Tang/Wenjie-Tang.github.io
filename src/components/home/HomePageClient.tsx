@@ -84,7 +84,7 @@ export default function HomePageClient({ dataByLocale, defaultLocale }: HomePage
             {page.type === 'card' && (page.continuationConfig ? (
               <div className="research-section-content">
                 <CardPage config={page.config} embedded />
-                <CardPage config={page.continuationConfig} embedded showHeading={false} />
+                <CardPage config={page.continuationConfig} embedded />
               </div>
             ) : (
               <CardPage config={page.config} embedded />

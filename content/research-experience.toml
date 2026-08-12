@@ -1,5 +1,6 @@
 type = "card"
 variant = "timeline"
+date_position = "header"
 title = "Research Experience"
 description = "Current and recent research appointments in XR, embodied interaction, and human-AI collaboration."
 
