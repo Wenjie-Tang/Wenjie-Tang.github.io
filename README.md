@@ -115,6 +115,14 @@ npm run build
 
 This generates a static `out/` directory that can be hosted anywhere.
 
+For this personal site repository, use the guarded deployment command below. It verifies the site, commits current changes, pushes `main`, and waits for the GitHub Pages workflow:
+
+```bash
+npm run deploy -- "Describe the website update"
+```
+
+Use `npm run deploy -- --dry-run` to exercise the complete preflight without committing or pushing. See [Personal Site Deployment](docs/personal-site-deployment.md) for safety checks and details.
+
 👉 **[Read the full Deployment Guide](docs/deployment.md)** for instructions on deploying to **GitHub Pages** and **Cloudflare Pages**.
 
 ## 📂 Project Structure
