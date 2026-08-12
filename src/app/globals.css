@@ -1072,6 +1072,37 @@ textarea:focus-visible {
   font-weight: 650;
 }
 
+#education .compact-grid {
+  grid-template-columns: 1fr;
+}
+
+#education .compact-title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+}
+
+#education .compact-date {
+  color: var(--neutral-500);
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+#education .compact-subtitle {
+  margin-top: 0.35rem;
+  color: var(--primary);
+  font-size: 0.90625rem;
+  font-weight: 500;
+}
+
+#education .compact-summary {
+  margin-top: 0.3rem;
+  color: var(--neutral-500);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
 .award-list {
   list-style: none;
   border-top: 1px solid var(--neutral-200);
@@ -1344,6 +1375,10 @@ textarea:focus-visible {
 
   .timeline-item--header-date .timeline-date {
     text-align: left;
+  }
+
+  #education .compact-heading-row {
+    gap: 0.35rem;
   }
 
   .publication-card {

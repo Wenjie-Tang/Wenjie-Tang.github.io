@@ -21,7 +21,7 @@ enable_likes = false
 enable_one_page_mode = true
 
 [homepage]
-sections = ["about", "research", "publications", "experience", "awards", "skills", "community"]
+sections = ["about", "education", "research", "publications", "experience", "awards", "skills", "community"]
 
 [[navigation]]
 title = "关于"

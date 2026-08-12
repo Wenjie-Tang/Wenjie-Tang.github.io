@@ -4,9 +4,7 @@ title = "Education"
 description = "Product design training grounded in interaction, visual communication, and technical prototyping."
 
 [[items]]
-title = "Central South University (Project 985)"
+title = "Central South University"
+date = "Project 985 · Project 211 · Double First-Class"
 subtitle = "Bachelor in Product Design"
-location = "China"
-date = "Sep. 2023-Jun. 2027"
-content = "GPA 87.74/100 · Ranking 22/147"
-bullets = ["Information and Communication Design - 93", "Computer-Aided Industrial Design - 90", "Digital Image Technology"]
+content = "Changsha, Hunan, China · 2023–2027"
