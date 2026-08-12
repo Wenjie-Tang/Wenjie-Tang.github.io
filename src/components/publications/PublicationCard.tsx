@@ -3,6 +3,7 @@
 import ActionLinks from '@/components/ui/ActionLinks';
 import Tag from '@/components/ui/Tag';
 import FormattedBibTeXText from './FormattedBibTeXText';
+import { ExternalLink } from 'lucide-react';
 import type { Publication } from '@/types/publication';
 import { useLocaleStore } from '@/lib/stores/localeStore';
 
@@ -27,7 +28,20 @@ export default function PublicationCard({ publication }: { publication: Publicat
           {publication.role && <span className="status-label">{publication.role}</span>}
         </div>
         <h3 className="publication-title">
-          <FormattedBibTeXText nodes={publication.titleNodes} fallback={publication.title} />
+          {publication.url ? (
+            <a
+              href={publication.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="research-title-link"
+            >
+              <FormattedBibTeXText nodes={publication.titleNodes} fallback={publication.title} />
+              <ExternalLink className="research-title-link-icon" aria-hidden="true" size={14} strokeWidth={1.8} />
+              <span className="sr-only"> (opens in a new tab)</span>
+            </a>
+          ) : (
+            <FormattedBibTeXText nodes={publication.titleNodes} fallback={publication.title} />
+          )}
         </h3>
         <p className="publication-authors">
           {publication.authors.map((author, index) => (

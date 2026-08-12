@@ -62,7 +62,10 @@ content = "负责人机决策支持系统设计，将 GATv2 药物相互作用�
 metrics = ["2026 年国家本科生创新资助", "20,000 元"]
 tags = ["可解释人工智能", "医疗人机交互", "人机交互"]
 methods = ["PyTorch", "FastAPI", "SQLite", "OCR", "Qwen API", "GATv2"]
-actions = [{ label = "论文 PDF", href = "https://ieeexplore.ieee.org/document/11544474/authors#authors", type = "pdf" }]
+actions = [
+  { label = "论文 PDF", href = "https://ieeexplore.ieee.org/document/11544474/authors#authors", type = "pdf" },
+  { label = "项目网站", href = "http://www.cardioddi.site", type = "project" }
+]
 teaser = "XAI-04"
 teaser_label = "面向药物相互作用的可解释决策支持"
 image = "/images/research/ddi-cover.svg"

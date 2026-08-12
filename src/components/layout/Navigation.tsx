@@ -219,11 +219,14 @@ export default function Navigation({
                       {effectiveItems.map((item) => {
                         const isActive = isDesktopItemActive(item);
                         const href = getDesktopItemHref(item);
+                        const opensInNewTab = item.type === 'link' && href.toLowerCase().endsWith('.pdf');
 
                         return (
                           <Link
                             key={item.target}
                             href={href}
+                            target={opensInNewTab ? '_blank' : undefined}
+                            rel={opensInNewTab ? 'noopener noreferrer' : undefined}
                             data-nav-href={href}
                             prefetch={true}
                             onClick={() => enableOnePageMode && item.type === 'page' && setActiveHash(`#${item.target}`)}
@@ -289,6 +292,7 @@ export default function Navigation({
                       const href = enableOnePageMode && item.type === 'page'
                         ? (item.href === '/' ? '/' : `/#${item.target}`)
                         : item.href;
+                      const opensInNewTab = item.type === 'link' && href.toLowerCase().endsWith('.pdf');
 
                       return (
                         <motion.div
@@ -299,6 +303,8 @@ export default function Navigation({
                         >
                           <Link
                             href={href}
+                            target={opensInNewTab ? '_blank' : undefined}
+                            rel={opensInNewTab ? 'noopener noreferrer' : undefined}
                             prefetch={true}
                             onClick={(event) => {
                               if (enableOnePageMode && item.type === 'page') {

@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { CalendarDays, Check, FileText, Github, Mail, MapPin } from 'lucide-react';
 import { ExternalEntityText } from '@/components/ui/ExternalEntityLink';
@@ -129,10 +128,15 @@ export default function Profile({ author, social }: ProfileProps) {
             <span>GitHub</span>
           </a>
         )}
-        <Link href="/cv/" aria-label={isChinese ? '查看简历' : 'View CV'}>
+        <a
+          href="/Wenjie-Tang-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={isChinese ? '打开简历 PDF（在新标签页中打开）' : 'Open CV PDF (opens in a new tab)'}
+        >
           <FileText aria-hidden="true" size={17} />
           <span>CV</span>
-        </Link>
+        </a>
       </div>
 
       <div className="profile-details">

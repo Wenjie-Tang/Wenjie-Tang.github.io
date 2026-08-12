@@ -62,7 +62,10 @@ content = "Led the design of a human-AI decision-support system for drug-drug in
 metrics = ["2026 national undergraduate innovation grant", "RMB 20,000"]
 tags = ["Explainable AI", "Healthcare HCI", "Human-AI Interaction"]
 methods = ["PyTorch", "FastAPI", "SQLite", "OCR", "Qwen API", "GATv2"]
-actions = [{ label = "Paper PDF", href = "https://ieeexplore.ieee.org/document/11544474/authors#authors", type = "pdf" }]
+actions = [
+  { label = "Paper PDF", href = "https://ieeexplore.ieee.org/document/11544474/authors#authors", type = "pdf" },
+  { label = "Website", href = "http://www.cardioddi.site", type = "project" }
+]
 teaser = "XAI-04"
 teaser_label = "Explainable decision support for drug interactions"
 image = "/images/research/ddi-cover.svg"
