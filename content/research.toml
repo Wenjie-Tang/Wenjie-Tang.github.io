@@ -48,10 +48,12 @@ methods = ["Semi-Structured Interviews", "Inductive Thematic Analysis", "Qualita
 actions = [{ label = "Paper PDF", href = "/multi-genai-creative-workflows-chi27.pdf", type = "pdf" }]
 teaser = "GEN-03"
 teaser_label = "Coordinating a revisable GenAI tool repertoire"
+image = "/images/research/genai-cover.svg"
 
 [[items]]
 eyebrow = "Explainable AI · Healthcare"
 title = "Explainable GATv2-Based Human-AI Decision Support for Cardiovascular DDI Prediction"
+title_link = "https://ieeexplore.ieee.org/document/11544474/authors#authors"
 affiliation = "Central South University"
 role = "Project Leader"
 advisor = "Advisors: Prof. Simian Liu and Zhenxiao Zhang"
@@ -63,6 +65,7 @@ tags = ["Explainable AI", "Healthcare HCI", "Human-AI Interaction"]
 methods = ["PyTorch", "FastAPI", "SQLite", "OCR", "Qwen API", "GATv2"]
 teaser = "XAI-04"
 teaser_label = "Explainable decision support for drug interactions"
+image = "/images/research/ddi-cover.svg"
 
 [[items]]
 eyebrow = "Family HCI · Interaction design"
@@ -78,3 +81,4 @@ tags = ["Family HCI", "Embodied Interaction", "Intergenerational Interaction"]
 methods = ["Semi-Structured Interviews", "Thematic Analysis", "Usability Testing", "Hardware Prototyping"]
 teaser = "FAM-05"
 teaser_label = "Collaborative play across generations"
+image = "/images/research/intergenerational-cover.svg"

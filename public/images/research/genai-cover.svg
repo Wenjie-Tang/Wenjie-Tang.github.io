@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Revisable generative AI tool repertoire</title>
+  <desc id="desc">An academic diagram of connected generative AI tools coordinated through a revisable workflow.</desc>
+  <rect width="800" height="800" fill="#f2f6f6"/>
+  <path d="M0 138H800M0 662H800" stroke="#d7e1e2" stroke-width="2"/>
+  <path d="M108 0V800M692 0V800" stroke="#e1e8e9" stroke-width="2"/>
+  <circle cx="400" cy="400" r="238" fill="#ffffff" stroke="#17324d" stroke-width="3"/>
+  <circle cx="400" cy="400" r="184" fill="none" stroke="#86a8a3" stroke-width="3" stroke-dasharray="8 12"/>
+  <path d="M400 216A184 184 0 0 1 574 340" fill="none" stroke="#b78b34" stroke-width="9" stroke-linecap="round"/>
+  <path d="M574 460A184 184 0 0 1 400 584" fill="none" stroke="#c76555" stroke-width="9" stroke-linecap="round"/>
+  <path d="M226 460A184 184 0 0 1 400 216" fill="none" stroke="#2e7775" stroke-width="9" stroke-linecap="round"/>
+  <path d="M541 322l37 21-41 12" fill="#b78b34"/>
+  <path d="M429 579l-31 26-5-43" fill="#c76555"/>
+  <path d="M239 334l-17-39 42 11" fill="#2e7775"/>
+  <rect x="300" y="320" width="200" height="160" rx="16" fill="#17324d"/>
+  <rect x="322" y="344" width="156" height="12" rx="6" fill="#f4cf75"/>
+  <rect x="322" y="376" width="108" height="8" rx="4" fill="#b8c9cf"/>
+  <rect x="322" y="400" width="136" height="8" rx="4" fill="#b8c9cf"/>
+  <rect x="322" y="424" width="78" height="8" rx="4" fill="#b8c9cf"/>
+  <circle cx="400" cy="198" r="48" fill="#f4cf75" stroke="#17324d" stroke-width="3"/>
+  <path d="M378 202h44M388 186h24M388 218h24" stroke="#17324d" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="602" cy="400" r="48" fill="#d97967" stroke="#17324d" stroke-width="3"/>
+  <path d="M580 419l14-27 14 14 16-27" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="400" cy="602" r="48" fill="#70a7a1" stroke="#17324d" stroke-width="3"/>
+  <path d="M380 586h40v31h-40zM390 576h20" fill="none" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="198" cy="400" r="48" fill="#ffffff" stroke="#17324d" stroke-width="3"/>
+  <path d="M174 386h48M174 402h34M174 418h42" stroke="#2e7775" stroke-width="7" stroke-linecap="round"/>
+  <rect x="272" y="112" width="256" height="42" rx="4" fill="#ffffff" stroke="#c8d5d8" stroke-width="2"/>
+  <text x="400" y="139" fill="#17324d" font-family="Arial, sans-serif" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="0">REVISABLE TOOL REPERTOIRE</text>
+  <text x="400" y="720" fill="#506875" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" letter-spacing="0">SELECT · COORDINATE · ADAPT</text>
+</svg>

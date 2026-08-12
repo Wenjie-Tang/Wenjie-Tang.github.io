@@ -37,6 +37,7 @@ export interface CardItem {
     bullets?: string[];
     actions?: ActionLink[];
     link?: string;
+    title_link?: string;
     image?: string;
     teaser?: string;
     teaser_label?: string;

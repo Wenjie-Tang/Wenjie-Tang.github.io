@@ -601,7 +601,9 @@ textarea:focus-visible {
 }
 
 .section-description {
+  width: min(100%, 36rem);
   max-width: 720px;
+  justify-self: end;
   padding-top: 0.2rem;
   color: var(--neutral-600);
   font-size: 0.875rem;
@@ -677,6 +679,14 @@ textarea:focus-visible {
   position: relative;
   min-height: 100%;
   border-right: 1px solid var(--neutral-200);
+  background: var(--neutral-100);
+}
+
+.research-cover {
+  object-fit: cover;
+}
+
+.research-cover-diagram {
   background: var(--neutral-100);
 }
 
@@ -757,6 +767,42 @@ textarea:focus-visible {
   font-weight: 650;
   line-height: 1.35;
   overflow-wrap: anywhere;
+}
+
+.research-title-link {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  transition: color 160ms ease, text-decoration-color 160ms ease;
+}
+
+.research-title-link-icon {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.28em;
+  vertical-align: 0.04em;
+  opacity: 0.55;
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.research-title-link:hover,
+.research-title-link:focus-visible {
+  color: var(--accent-dark);
+  text-decoration-color: currentColor;
+}
+
+.research-title-link:hover .research-title-link-icon,
+.research-title-link:focus-visible .research-title-link-icon {
+  opacity: 0.9;
+  transform: translate(1px, -1px);
+}
+
+.dark .research-title-link:hover,
+.dark .research-title-link:focus-visible {
+  color: var(--accent-light);
 }
 
 .research-affiliation {
@@ -1170,6 +1216,12 @@ textarea:focus-visible {
   .section-heading {
     grid-template-columns: 1fr;
     gap: 0.9rem;
+  }
+
+  .section-description {
+    width: 100%;
+    max-width: 720px;
+    justify-self: start;
   }
 
   .research-card {
