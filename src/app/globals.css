@@ -955,6 +955,11 @@ textarea:focus-visible {
   border-top: 1px solid var(--neutral-200);
 }
 
+.timeline-item--header-date {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
 .timeline-item:last-child {
   border-bottom: 1px solid var(--neutral-200);
 }
@@ -966,6 +971,16 @@ textarea:focus-visible {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.timeline-heading-main {
+  min-width: 0;
+}
+
+.timeline-item--header-date .timeline-date {
+  flex: 0 0 auto;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .timeline-title,
@@ -980,6 +995,7 @@ textarea:focus-visible {
 .timeline-title {
   margin-top: 0.2rem;
   font-size: var(--text-card-title);
+  overflow-wrap: anywhere;
 }
 
 .timeline-subtitle,
@@ -1319,6 +1335,10 @@ textarea:focus-visible {
   .timeline-item {
     gap: 0.4rem;
     padding: 0.875rem 0;
+  }
+
+  .timeline-item--header-date .timeline-date {
+    text-align: left;
   }
 
   .publication-card {

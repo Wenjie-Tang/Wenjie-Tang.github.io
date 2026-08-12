@@ -47,5 +47,6 @@ export interface CardItem {
 export interface CardPageConfig extends BasePageConfig {
     type: 'card';
     variant?: 'research' | 'timeline' | 'compact' | 'awards' | 'clusters';
+    date_position?: 'aside' | 'header';
     items: CardItem[];
 }
